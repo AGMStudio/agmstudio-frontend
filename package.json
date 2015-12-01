@@ -1,0 +1,19 @@
+{
+  "name": "agmstudio-frontend",
+  "version": "0.0.1",
+  "description": "Diseño frontend para AGM Studio",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AGMStudio/agmstudio-frontend.git"
+  },
+  "author": "adrigm",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AGMStudio/agmstudio-frontend/issues"
+  },
+  "homepage": "https://github.com/AGMStudio/agmstudio-frontend#readme"
+}
