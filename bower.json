@@ -1,0 +1,20 @@
+{
+  "name": "agmstudio-frontend",
+  "description": "Diseño frontend para AGM Studio",
+  "main": "index.html",
+  "authors": [
+    "Adrián Guerra Marrero"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/AGMStudio/agmstudio-frontend",
+  "moduleType": [
+    "node"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
