@@ -1,7 +1,8 @@
-var gulp =      require('gulp');
-var concat =    require('gulp-concat');
-var uglify =    require('gulp-uglify');
-var del =       require('del');
+var gulp =          require('gulp');
+var concat =        require('gulp-concat');
+var uglify =        require('gulp-uglify');
+var del =           require('del');
+var runSequence =   require('run-sequence');
 
 gulp.task('html', function() {
     gulp.src('src/html/**/*.html')
@@ -21,4 +22,9 @@ gulp.task('clean', function() {
     ]);
 });
 
-gulp.task('default', ['html', 'js']);
+gulp.task('default', function() {
+    runSequence(
+        'clean',
+        ['html', 'js']
+    );
+});
