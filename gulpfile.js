@@ -29,7 +29,7 @@ gulp.task('html', function() {
 
 gulp.task('js', function() {
     gulp.src('src/js/**/*.js')
-        .pipe(concat('final.js'))
+        .pipe(concat('app.min.js'))
         .pipe(uglify())
         .pipe(gulp.dest(paths.js));
 });
