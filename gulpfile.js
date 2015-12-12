@@ -1,6 +1,7 @@
 var gulp =          require('gulp');
 var concat =        require('gulp-concat');
 var uglify =        require('gulp-uglify');
+var processhtml =   require('gulp-processhtml');
 var del =           require('del');
 var path =          require('path');
 var runSequence =   require('run-sequence');
@@ -22,9 +23,29 @@ var paths = {
     img : path.join(config.folders.dist, config.folders.assets, 'img'),
 };
 
+var environments = {
+    dist : {
+        data: {
+            assets: config.folders.assets,
+        },
+    },
+    dev : {
+        data: {
+            assets: config.folders.assets,
+        },
+    },
+};
+
 gulp.task('html', function() {
-    gulp.src('src/html/**/*.html')
-        .pipe(gulp.dest(paths.dist));
+    gulp.src(['src/html/**/*.html', '!src/html/layout/**/*'])
+        .pipe(processhtml({
+            recursive: true,
+            process: true,
+            strip: true,
+            environment: environments.dist,
+            data: environments.dist.data,
+        }))
+        .pipe(gulp.dest(path.join(paths.html)));
 });
 
 gulp.task('js', function() {
