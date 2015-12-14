@@ -1,5 +1,6 @@
 var gulp =          require('gulp');
 var concat =        require('gulp-concat');
+var connect =       require('gulp-connect');
 var gulpif =        require('gulp-if');
 var beautify =      require('gulp-beautify');
 var uglify =        require('gulp-uglify');
@@ -92,14 +93,16 @@ gulp.task('html', function() {
             environment: targets.dev.environment,
             data: targets.dev.data
         }))
-        .pipe(gulp.dest(path.join(paths.html)));
+        .pipe(gulp.dest(path.join(paths.html)))
+        .pipe(connect.reload());
 });
 
 gulp.task('js', function() {
     gulp.src('src/js/**/*.js')
         .pipe(concat('app.min.js'))
         .pipe(uglify())
-        .pipe(gulp.dest(paths.js));
+        .pipe(gulp.dest(paths.js))
+        .pipe(connect.reload());
 });
 
 gulp.task('clean', function() {
@@ -108,9 +111,23 @@ gulp.task('clean', function() {
     ]);
 });
 
+gulp.task('watch', function () {
+    gulp.watch(['src/html/**/*'], ['html']);
+    gulp.watch(['src/js/**/*'], ['html']);
+});
+
+gulp.task('connect', function() {
+    connect.server({
+        root: config.folders.dist,
+        port: 8080,
+        livereload: true
+    });
+});
+
 gulp.task('default', function() {
     runSequence(
         'clean',
-        ['plugins', 'html', 'js']
+        ['plugins', 'html', 'js'],
+        ['connect', 'watch']
     );
 });
