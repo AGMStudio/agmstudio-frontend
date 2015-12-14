@@ -2,6 +2,7 @@ var gulp =          require('gulp');
 var concat =        require('gulp-concat');
 var connect =       require('gulp-connect');
 var gulpif =        require('gulp-if');
+var jshint =        require('gulp-jshint');
 var beautify =      require('gulp-beautify');
 var uglify =        require('gulp-uglify');
 var processhtml =   require('gulp-processhtml');
@@ -100,8 +101,10 @@ gulp.task('html', function() {
 
 gulp.task('js', function() {
     gulp.src('src/js/**/*.js')
-        .pipe(concat('app.min.js'))
-        .pipe(uglify())
+        .pipe(jshint())
+        .pipe(jshint.reporter('default'))
+        .pipe(gulpif(config.distMode, concat('app.min.js')))
+        .pipe(gulpif(config.distMode, uglify()))
         .pipe(gulp.dest(paths.js))
         .pipe(connect.reload());
 });
@@ -114,7 +117,7 @@ gulp.task('clean', function() {
 
 gulp.task('watch', function () {
     gulp.watch(['src/html/**/*'], ['html']);
-    gulp.watch(['src/js/**/*'], ['html']);
+    gulp.watch(['src/js/**/*'], ['js']);
 });
 
 gulp.task('connect', function() {

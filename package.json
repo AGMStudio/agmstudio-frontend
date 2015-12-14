@@ -23,8 +23,10 @@
     "gulp-concat": "^2.6.0",
     "gulp-connect": "^2.2.0",
     "gulp-if": "^2.0.0",
+    "gulp-jshint": "^2.0.0",
     "gulp-processhtml": "^1.1.0",
     "gulp-uglify": "^1.5.1",
+    "jshint": "^2.8.0",
     "path": "^0.12.7",
     "run-sequence": "^1.1.5"
   }
