@@ -36,7 +36,8 @@ var config = {
         ]
     },
 
-    distMode : false
+    distMode : false,
+    environment : 'dev'
 };
 
 var paths = {
@@ -90,8 +91,8 @@ gulp.task('html', function() {
             recursive: true,
             process: true,
             strip: true,
-            environment: targets.dev.environment,
-            data: targets.dev.data
+            environment: targets[config.environment].environment,
+            data: targets[config.environment].data
         }))
         .pipe(gulp.dest(path.join(paths.html)))
         .pipe(connect.reload());
@@ -126,8 +127,30 @@ gulp.task('connect', function() {
 
 gulp.task('default', function() {
     runSequence(
-        'clean',
-        ['plugins', 'html', 'js'],
         ['connect', 'watch']
+    );
+});
+
+gulp.task('dev', function() {
+    runSequence(
+        'clean',
+        ['plugins', 'html', 'js']
+    );
+});
+
+gulp.task('work', function() {
+    runSequence(
+        'dev',
+        'default'
+    );
+});
+
+gulp.task('dist', function() {
+    config.distMode = true;
+    config.environment = 'dist';
+
+    runSequence(
+        'clean',
+        ['plugins', 'html', 'js']
     );
 });
