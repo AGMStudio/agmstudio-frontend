@@ -1,0 +1,17 @@
+$color: #ddd;
+
+body {
+    background-color: $color;
+    font-size: 14rem;
+}
+
+.otra {
+	font-size: 1rem;
+	line-height: 100%;
+	background-color: #f0f;
+
+	border-radius: 5px;
+
+	background: linear-gradient(red, blue);
+	flex-direction: column;
+}
