@@ -1,5 +1,7 @@
 var gulp =          require('gulp');
 var concat =        require('gulp-concat');
+var gulpif =        require('gulp-if');
+var beautify =      require('gulp-beautify');
 var uglify =        require('gulp-uglify');
 var processhtml =   require('gulp-processhtml');
 var del =           require('del');
@@ -22,7 +24,7 @@ var config = {
             'bower_components/bootstrap/dist/js/bootstrap.min.js',
         ],
         css : [
-            'bower_components/bootstrap/dist/js/bootstrap.min.css',
+            'bower_components/bootstrap/dist/css/bootstrap.min.css',
             'bower_components/font-awesome/css/font-awesome.min.css',
         ],
         fonts : [
@@ -31,7 +33,9 @@ var config = {
         ],
         img : [
         ]
-    }
+    },
+
+    distMode : false
 };
 
 var paths = {
@@ -61,15 +65,15 @@ var targets = {
 
 gulp.task('plugins', function() {
     gulp.src(config.plugins.jsConcat)
-        .pipe(concat('plugins.js', {}))
-        .pipe(uglify())
+        .pipe(gulpif(config.distMode, concat('plugins.min.js', {})))
+        .pipe(gulpif(config.distMode, uglify(), beautify()))
         .pipe(gulp.dest(paths.js));
 
     gulp.src(config.plugins.js)
         .pipe(gulp.dest(paths.js));
 
     gulp.src(config.plugins.css)
-        .pipe(concat('plugins.css', {}))
+        .pipe(gulpif(config.distMode, concat('plugins.min.css', {})))
         .pipe(gulp.dest(paths.css));
 
     gulp.src(config.plugins.fonts)
