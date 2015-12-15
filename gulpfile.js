@@ -157,6 +157,8 @@ gulp.task('watch', function () {
     gulp.watch(['src/html/**/*'], ['html']);
     gulp.watch(['src/js/**/*'], ['js']);
     gulp.watch(['src/scss/**/*'], ['scss']);
+    gulp.watch(['src/img/**/*'], ['img']);
+    gulp.watch(['src/fonts/**/*'], ['fonts']);
 });
 
 gulp.task('connect', function() {
