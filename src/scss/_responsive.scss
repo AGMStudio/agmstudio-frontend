@@ -1,0 +1,228 @@
+@media (max-width: 1199px) {
+    .ag-hero {
+        background-position: -7% 107%, 107% 107%, -7% 107%, 107% 107%;
+        position: relative;
+
+        &:hover {
+            background-position: -7% 107%, 107% 107%, -7% 107%, 107% 107%;
+        }
+
+        .ag-hero-img {
+            position: relative;
+
+            img.book {
+                margin: 0 auto;
+                position: absolute;
+                bottom: -486px;
+                left: 20px;
+            }
+        }
+    }
+
+    .widget-popular {
+        .popular-post {
+            .popular-title {
+                font-size: 14px !important;
+            }
+
+            img {
+                display: none;
+            }
+        }
+    }
+}
+
+@media (max-width: 991px) {
+    .ag-hero {
+        .ag-hero-img {
+            position: static;
+
+            img.book {
+                position: static;
+            }
+        }
+
+        .ag-hero-buttons {
+            text-align: center;
+            margin-bottom: 15px;
+
+            a {
+                margin-bottom: 15px;
+            }
+        }
+    }
+
+    .agm-navbar {
+        .navbar-nav
+        {
+            & > li
+            {
+                & > a
+                {
+                    min-width: 90px;
+                }
+            }
+        }
+    }
+
+    .post-info {
+        margin-top: 20px;
+    }
+
+    .widget-popular {
+        .popular-post {
+            .popular-title {
+                font-size: 16px !important;
+            }
+
+            img {
+                display:block;
+            }
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .agm-navbar {
+        height: 50px;
+        box-shadow: 0 0 1px 0 rgba(0,0,0,.2);
+
+        .navbar-collapse {
+            background-color: $color-dark;
+            padding: 0;
+            border: none;
+
+            .navbar-nav
+            {
+                margin: 0;
+
+
+                & > li
+                {
+                    text-align: left;
+
+                    & > a
+                    {
+                        text-align: left;
+                        height: 50px;
+                        padding-bottom: 0;
+
+                        .menu-icon
+                        {
+                            display: inline-block;
+                            font-size: 20px;
+                            margin-right: 20px;
+                        }
+                    }
+                }
+
+                & > li.dropdown
+                {
+                    & > a::after
+                    {
+                        font-family: FontAwesome;
+                        font-size: 14px;
+                        font-weight: normal;
+
+                        position: absolute;
+                        bottom: auto;
+                        left: auto;
+                        right: 5%;
+
+                        display: inline-block;
+
+                        content: '\f105';
+                    }
+                }
+
+                & > li.dropdown.open {
+                    & > a::after
+                    {
+                        content: '\f107';
+                    }
+                }
+
+                ul {
+                    li {
+                        a {
+                            text-transform: uppercase;
+                            padding: 15px 50px;;
+                        }
+                    }
+                }
+            }
+        }
+
+
+        .navbar-header
+        {
+            margin-left: 20px;
+
+            .navbar-toggle {
+                right: 0;
+                margin: 0;
+                height: 50px;
+                width: 50px;
+
+                font-size: 1.5em;
+            }
+
+            .navbar-title
+            {
+                .navbar-brand
+                {
+                    font-size: 28px;
+                    margin-top: 10px;
+                }
+
+                #slogan
+                {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    .ag-hero {
+        background-image: none;
+
+        .ag-hero-buttons {
+            text-align: center;
+            margin-bottom: 15px;
+
+            a {
+                margin-bottom: 15px;
+            }
+        }
+    }
+
+    .blog-post {
+        .post-info {
+        }
+    }
+}
+
+
+@media (max-width: 550px) {
+    .col-xxs-12 {
+        width: 100%;
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    .post-img {
+        display: none;
+    }
+
+    .post-content {
+        width: 100%;
+    }
+
+    .post-info {
+        margin-top: 0;
+    }
+
+    .header-page {
+        padding: 18px 0 18px 0;
+    }
+}

@@ -1,0 +1,130 @@
+/* --------------------------------------------------------------------------*/
+/* Headers
+/* --------------------------------------------------------------------------*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    -webkit-font-smoothing: antialiased;
+
+    color: $color-dark;
+
+    & > strong {
+        font-weight: 400;
+    }
+}
+
+h1 {
+    font-size: 2.2em;
+}
+
+h2 {
+    font-size: 1.9em;
+}
+
+h3 {
+    font-size: 1.7em;
+}
+
+h4 {
+    font-size: 1.5em;
+}
+
+h5 {
+    font-size: 1.3em;
+}
+
+h6 {
+    font-size: 1.1em;
+}
+
+.page-header {
+    border-color: $color-border;
+}
+
+.color-first-letter:first-letter {
+    color: $color-primary;
+}
+
+.big-first-letter::first-letter {
+    font-size: 1.2em;
+}
+
+.lead {
+    font-weight: 400;
+}
+
+.lead-lg {
+    font-size: 1.8em;
+    font-weight: 300;
+}
+
+.lead-lg strong {
+    font-weight: 400;
+}
+
+.lead-sm {
+    font-size: 1.2em;
+}
+
+.lead-xs {
+    font-size: 1.1em;
+    font-weight: 100;
+}
+
+.color-primary {
+    color: $color-primary;
+}
+
+.color-success {
+    color: $color-success;
+}
+
+.color-info {
+    color: $color-info;
+}
+
+.color-royal {
+    color: $color-royal;
+}
+
+.color-danger {
+    color: $color-danger;
+}
+
+.color-warning {
+    color: $color-warning;
+}
+
+/* --------------------------------------------------------------------------*/
+/* Links
+/* --------------------------------------------------------------------------*/
+
+a {
+    text-decoration: none;
+
+    color: $color-primary;
+}
+
+a:hover,
+a:focus,
+a:active {
+    text-decoration: none;
+
+    color: $color-dark;
+}
+
+/* --------------------------------------------------------------------------*/
+/* Paragraphs
+/* --------------------------------------------------------------------------*/
+
+p {
+    font-weight: 400;
+
+    margin-bottom: 15px;
+}

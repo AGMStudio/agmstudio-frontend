@@ -22,6 +22,9 @@
     "jquery": "~2.1.4",
     "font-awesome": "~4.5.0",
     "html5shiv": "~3.7.3",
-    "respond": "~1.4.2"
+    "respond": "~1.4.2",
+    "animate.css": "~3.5.0",
+    "Yamm3": "yamm3#~1.1.0",
+    "holderjs": "~2.9.0"
   }
 }

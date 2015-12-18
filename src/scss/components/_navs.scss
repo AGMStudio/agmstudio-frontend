@@ -1,0 +1,133 @@
+/* --------------------------------------------------------------------------*/
+/* Collapses Components
+/* --------------------------------------------------------------------------*/
+
+.agm-collapse-nav {
+    margin: 0;
+    padding: 0;
+
+    border: solid 1px $color-border;
+    background-color: $color-light-alt;
+
+    li {
+        margin: 0;
+        padding: 0;
+
+        list-style-position: outside;
+        list-style-type: none;
+
+        a {
+            font-family: 'Roboto';
+            font-size: 13px;
+
+            display: block;
+
+            padding: 5px 15px;
+
+            color: $color-dark;
+            background-color: $color-light-alt;
+
+            i {
+                margin-right: 7px;
+            }
+
+            &:after {
+                font-family: 'FontAwesome';
+                font-size: 1.2em;
+
+                float: right;
+
+                content: '\f105';
+            }
+
+            &:hover,
+            &:active {
+                background-color: darken($color-light-alt, 5%);
+            }
+        }
+
+        &.active {
+            a {
+                background-color: darken($color-light-alt, 5%);
+            }
+        }
+
+        .panel-collapse {
+            margin: 0;
+            padding: 0;
+
+            border: none;
+            border-top: solid 1px $color-border;
+            border-bottom: solid 1px $color-border;
+            background-color: $color-light;
+
+            li {
+                margin: 0;
+                padding: 0;
+
+                background-color: none;
+
+                a {
+                    background: none;
+
+                    i {
+                        font-size: 1.1em;
+                        color: $color-medium;
+                    }
+
+                    &:hover {
+                        color: #fff;
+                        background-color: $color-primary;
+
+                        i {
+                            color: $color-light;
+                        }
+                    }
+
+                    &:after {
+                        content: none;
+                    }
+                }
+
+                &.active {
+                    a {
+                        color: #fff;
+                        background-color: $color-primary;
+
+                        i {
+                            color: $color-light;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    li.panel {
+        margin: 0;
+        padding: 0;
+
+        border: 0;
+        background: none;
+        box-shadow: none;
+
+        a {
+            &:after {
+                font-family: 'FontAwesome';
+                font-size: 1.2em;
+
+                float: right;
+
+                content: '\f107';
+            }
+
+            &.collapsed::after {
+                content: '\f105';
+            }
+        }
+    }
+
+    li.panel + li.panel {
+        margin: 0;
+    }
+}

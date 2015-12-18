@@ -1,0 +1,214 @@
+/* --------------------------------------------------------------------------*/
+/* AGM Navbar
+/* --------------------------------------------------------------------------*/
+
+.agm-navbar
+{
+    height: 90px;
+    margin-bottom: 0;
+
+    background-color: $color-dark;
+
+    .navbar-header
+    {
+        .navbar-toggle
+        {
+            min-width: 44px;
+            min-height: 44px;
+
+            color: #fff;
+            border-radius: 0;
+            background-color: $color-primary;
+        }
+
+        .navbar-title
+        {
+            display: inline-block;
+
+
+            .navbar-brand
+            {
+                font-family: 'Oswald', sans-serif;
+                font-size: 37px;
+                font-weight: bold;
+                line-height: 100%;
+
+                display: inline-block;
+                float: none;
+
+                margin-top: 15px;
+                margin-bottom: -10px;
+                margin-left: 0;
+                padding: 0;
+
+                word-spacing: -6px;
+
+                color: $color-primary;
+
+
+                span
+                {
+                    color: $color-light;
+                }
+            }
+
+            #slogan
+            {
+                font-family: 'Open Sans Condensed', sans-serif;
+                letter-spacing: 0.3px;
+                font-size: 18px;
+                font-weight: 300;
+
+                display: block;
+
+                margin: 0;
+
+                color: lighten($color-medium, 25);;
+            }
+        }
+    }
+
+    .navbar-nav
+    {
+        & > li
+        {
+            & > a
+            {
+                font-family: 'Oswald', sans-serif;
+                font-size: 1.1em;
+                font-weight: 400;
+
+                min-width: 100px;
+                height: 90px;
+                margin: 0;
+                padding: 15px 10px 0 10px;
+
+                transition: all .1s ease;
+
+                text-align: center;
+                letter-spacing: .05em;
+                text-transform: uppercase;
+
+                color: $color-light;
+
+
+                .menu-icon
+                {
+                    font-size: 1.6em;
+
+                    display: block;
+
+                    margin-bottom: 10px;
+                }
+
+                &:hover,
+                &:focus,
+                &:active
+                {
+                    background-color: $color-primary;
+                }
+            }
+
+            &.active a
+            {
+                background-color: $color-primary;
+            }
+
+            & > .dropdown-menu
+            {
+                border-color: $color-dark;
+                border-top: solid 1px lighten($color-dark, 4%);
+                border-radius: 0;
+                background-color: darken($color-dark, 4%);
+                box-shadow: none;
+
+
+                & > li
+                {
+                    & > a
+                    {
+                        padding-top: 8px;
+                        padding-bottom: 8px;
+
+                        transition: all .1s ease;
+
+                        color: $color-light;
+                    }
+
+                    & > a:hover,
+                    & > a:focus
+                    {
+                        background-color: $color-primary;
+                    }
+                }
+            }
+        }
+
+        & > li.dropdown.open
+        {
+            & > a
+            {
+                background-color: $color-primary;
+            }
+        }
+
+        & > li.dropdown
+        {
+            & > a::after
+            {
+                font-family: FontAwesome;
+                font-size: 11px;
+                font-weight: normal;
+
+                position: absolute;
+                bottom: 0;
+                left: 48%;
+
+                display: inline-block;
+
+                content: '\f107';
+            }
+        }
+    } /* .navbar-nav */
+
+    &.shrink
+    {
+        height: 50px;
+
+        box-shadow: 0 0 1px 0 rgba(0,0,0,.2);
+
+        .navbar-nav
+        {
+            & > li
+            {
+                & > a
+                {
+                    height: 50px;
+                    padding-bottom: 0;
+
+                    .menu-icon
+                    {
+                        display: none;
+                    }
+                }
+            }
+        }
+
+        .navbar-header
+        {
+            .navbar-title
+            {
+                .navbar-brand
+                {
+                    font-size: 28px;
+                    margin-top: 10px;
+                }
+
+                #slogan
+                {
+                    display: none;
+                }
+            }
+        }
+    }
+} /* .agm-navbar */

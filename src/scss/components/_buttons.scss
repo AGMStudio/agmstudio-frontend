@@ -1,0 +1,72 @@
+@mixin btn-style($color-str) {
+    color: #fff;
+    border-color: darken($color-str, 10%);
+    background-color: $color-str;
+    transition: all ease 0.5s;
+
+    &:hover {
+        background-color: darken($color-str, 3%);
+        border-color: darken($color-str, 15%);
+    }
+}
+
+.btn {
+    border-radius: 3px;
+
+    .fa {
+        margin-right: 5px;
+    }
+}
+
+.btn-md {
+    padding: 9px 20px;
+}
+
+.btn-sm {
+    padding: 6px 10px;
+}
+
+
+.btn-lg {
+    font-size: 1.1em;
+
+    padding: 12px 24px;
+}
+
+.btn.btn-default {
+    @include btn-style(darken($color-light, 6%));
+}
+
+.btn.btn-primary {
+    @include btn-style($color-primary);
+}
+
+.btn.btn-success {
+    @include btn-style($color-success);
+}
+
+.btn.btn-info {
+    @include btn-style($color-info);
+}
+
+.btn.btn-danger {
+    @include btn-style($color-danger);
+}
+
+.btn.btn-warning {
+    @include btn-style($color-warning);
+}
+
+.btn.btn-royal {
+    @include btn-style($color-royal);
+}
+
+.btn.btn-inverse {
+    color: #fff;
+    border: solid 1px #fff;
+
+    &:hover {
+        color: $color-primary;
+        background-color: #fff;
+    }
+}

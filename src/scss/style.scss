@@ -1,17 +1,19 @@
-$color: #ddd;
+// Google Fonts
+@import url(http://fonts.googleapis.com/css?family=Oswald:700,300|Open+Sans:400,300,600|Open+Sans+Condensed:300,400|Roboto:100,300,400|Roboto+Condensed:300,400|Lato:300,400);
 
-body {
-    background-color: $color;
-    font-size: 14rem;
-}
+@import 'variables';
+@import 'mixins';
+@import 'animations';
 
-.otra {
-	font-size: 1rem;
-	line-height: 100%;
-	background-color: #f0f;
+@import 'components/typography';
+@import 'components/icons';
+@import 'components/social-buttons';
+@import 'components/buttons.scss';
+@import 'components/forms.scss';
+@import 'components/navs.scss';
+@import 'components/navbar.scss';
+@import 'components/topbar.scss';
+@import 'components/panels.scss';
 
-	border-radius: 5px;
-
-	background: linear-gradient(red, blue);
-	flex-direction: column;
-}
+@import 'main';
+@import 'responsive';

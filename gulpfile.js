@@ -23,13 +23,15 @@ var config = {
     plugins : {
         js : [
             'bower_components/html5shiv/dist/html5shiv.min.js',
-            'bower_components/respond/dest/respond.min.js'
+            'bower_components/respond/dest/respond.min.js',
+            'bower_components/holderjs/holder.min.js'
         ],
         jsConcat : [
             'bower_components/jquery/dist/jquery.min.js',
             'bower_components/bootstrap/dist/js/bootstrap.min.js',
         ],
         css : [
+            'bower_components/animate.css/animate.min.css',
             'bower_components/bootstrap/dist/css/bootstrap.min.css',
             'bower_components/font-awesome/css/font-awesome.min.css',
         ],
@@ -72,15 +74,15 @@ var targets = {
 
 gulp.task('plugins', function() {
     gulp.src(config.plugins.jsConcat)
-        .pipe(gulpif(config.distMode, concat('plugins.min.js', {})))
-        .pipe(gulpif(config.distMode, uglify(), beautify()))
+        .pipe(concat('plugins.min.js', {}))
+        .pipe(uglify(), beautify())
         .pipe(gulp.dest(paths.js));
 
     gulp.src(config.plugins.js)
         .pipe(gulp.dest(paths.js));
 
     gulp.src(config.plugins.css)
-        .pipe(gulpif(config.distMode, concat('plugins.min.css', {})))
+        .pipe(concat('plugins.min.css', {}))
         .pipe(gulp.dest(paths.css));
 
     gulp.src(config.plugins.fonts)
@@ -107,8 +109,8 @@ gulp.task('js', function() {
     gulp.src('src/js/**/*.js')
         .pipe(jshint())
         .pipe(jshint.reporter('default'))
-        .pipe(gulpif(config.distMode, concat('app.min.js')))
-        .pipe(gulpif(config.distMode, uglify()))
+        .pipe(concat('app.min.js'))
+        .pipe(uglify())
         .pipe(gulp.dest(paths.js))
         .pipe(connect.reload());
 });

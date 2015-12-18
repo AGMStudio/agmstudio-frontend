@@ -1,0 +1,298 @@
+.btn-social {
+    line-height: 1;
+
+    display: inline-block;
+
+    width: 150px;
+    margin: 0 5px 5px 0;
+    padding: 8px 0;
+
+    -webkit-transition: background .25s ease;
+       -moz-transition: background .25s ease;
+        -ms-transition: background .25s ease;
+         -o-transition: background .25s ease;
+            transition: background .25s ease;
+    text-align: center;
+    text-decoration: none;
+
+    color: #aaa;
+    border: solid 1px #aaa;
+}
+
+
+
+.btn-social:hover {
+    text-decoration: none;
+
+    color: #fff;
+    background-color: #aaa;
+}
+
+.btn-social:active {
+    box-shadow: inset 1px 2px 1px rgba(0, 0, 0, .2);
+}
+
+.btn-social-white {
+    -webkit-transition: all .25s ease;
+       -moz-transition: all .25s ease;
+        -ms-transition: all .25s ease;
+         -o-transition: all .25s ease;
+            transition: all .25s ease;
+
+    color: #fff;
+    border-color: #fff;
+}
+
+.btn-social-light {
+    color: darken($color-light-alt, 30%) !important;
+    border: none !important;
+    background-color: darken($color-light-alt, 4%);
+}
+
+.btn-social-dark {
+    color: darken($color-light-alt, 30%) !important;
+    border: none !important;
+    background-color: lighten($color-dark, 7%);
+}
+
+
+.btn-social-light:hover,
+.btn-social-dark:hover {
+    color: #fff !important;
+}
+
+.btn-social-white:hover {
+    color: $color-primary;
+    border-color: $color-primary;
+    background-color: rgba(0, 0, 0, .1);
+}
+
+.btn-social .fa {
+    font-size: 18px;
+
+    margin: 0 10px 0 0;
+}
+
+.btn-social.solid:hover {
+    text-shadow: 0 -1px 2px rgba(0,0,0,.30);
+}
+
+.btn-social.btn-social-sm {
+    width: 32px;
+    height: 32px;
+}
+
+.btn-social.btn-social-lg {
+    width: 220px;
+    padding: 12px 0;
+}
+
+.btn-social.btn-social-xl-lg {
+    width: 400px;
+    padding: 18px 0;
+}
+
+.btn-social.btn-social-round {
+    border-radius: 5px;
+}
+
+.btn-social.btn-social-circle {
+    border-radius: 100px;
+}
+
+.btn-social.btn-social-border {
+    border: solid 1px darken($color-light-alt, 20%) !important;
+}
+
+
+.btn-social.btn-social-sm .fa {
+    margin: 0;
+}
+
+.btn-social.rss {
+    color: $rss-color;
+    border-color: $rss-color;
+}
+
+.btn-social.rss:hover,
+.btn-social.rss.solid {
+    color: #fff;
+    background-color: $rss-color;
+}
+
+.btn-social.facebook {
+    color: $facebook-color;
+    border-color: $facebook-color;
+}
+
+.btn-social.facebook:hover,
+.btn-social.facebook.solid {
+    color: #fff;
+    background-color: $facebook-color;
+}
+
+.btn-social.twitter {
+    color: $twitter-color;
+    border-color: $twitter-color;
+}
+
+.btn-social.twitter:hover,
+.btn-social.twitter.solid {
+    color: #fff;
+    background-color: $twitter-color;
+}
+
+
+.btn-social.google-plus {
+    color: $googleplus-color;
+    border-color: $googleplus-color;
+}
+
+.btn-social.google-plus:hover,
+.btn-social.google-plus.solid {
+    color: #fff;
+    background-color: $googleplus-color;
+}
+
+
+.btn-social.youtube {
+    color: $youtube-color;
+    border-color: $youtube-color;
+}
+
+.btn-social.youtube:hover,
+.btn-social.youtube.solid {
+    color: #fff;
+    background-color: $youtube-color;
+}
+
+
+.btn-social.linkedin {
+    color: $linkedin-color;
+    border-color: $linkedin-color;
+}
+
+.btn-social.linkedin:hover,
+.btn-social.linkedin.solid {
+    color: #fff;
+    background-color: $linkedin-color;
+}
+
+
+.btn-social.instagram {
+    color: $instagram-color;
+    border-color: $instagram-color;
+}
+
+.btn-social.instagram:hover,
+.btn-social.instagram.solid {
+    color: #fff;
+    background-color: $instagram-color;
+}
+
+
+.btn-social.pinterest {
+    color: $pinterest-color;
+    border-color: $pinterest-color;
+}
+
+.btn-social.pinterest:hover,
+.btn-social.pinterest.solid {
+    color: #fff;
+    background-color: $pinterest-color;
+}
+
+
+.btn-social.wordpress {
+    color: $wordpress-color;
+    border-color: $wordpress-color;
+}
+
+.btn-social.wordpress:hover,
+.btn-social.wordpress.solid {
+    color: #fff;
+    background-color: $wordpress-color;
+}
+
+
+.btn-social.git {
+    color: $git-color;
+    border-color: $git-color;
+}
+
+.btn-social.git:hover,
+.btn-social.git.solid {
+    color: #fff;
+    background-color: $git-color;
+}
+
+
+.btn-social.flickr {
+    color: $flickr-color;
+    border-color: $flickr-color;
+}
+
+.btn-social.flickr:hover,
+.btn-social.flickr.solid {
+    color: #fff;
+    background-color: $flickr-color;
+}
+
+
+.btn-social.stack-overflow {
+    color: $stack-overflow-color;
+    border-color: $stack-overflow-color;
+}
+
+.btn-social.stack-overflow:hover,
+.btn-social.stack-overflow.solid {
+    color: #fff;
+    background-color: $stack-overflow-color;
+}
+
+
+.btn-social.vine {
+    color: $vine-color;
+    border-color: $vine-color;
+}
+
+.btn-social.vine:hover,
+.btn-social.vine.solid {
+    color: #fff;
+    background-color: $vine-color;
+}
+
+
+.btn-social.dribbble {
+    color: $dribbble-color;
+    border-color: $dribbble-color;
+}
+
+.btn-social.dribbble:hover,
+.btn-social.dribbble.solid {
+    color: #fff;
+    background-color: $dribbble-color;
+}
+
+
+.btn-social.foursquare {
+    color: $foursquare-color;
+    border-color: $foursquare-color;
+}
+
+.btn-social.foursquare:hover,
+.btn-social.foursquare.solid {
+    color: #fff;
+    background-color: $foursquare-color;
+}
+
+.btn-social.tumblr {
+    color: $tumblr-color;
+    border-color: $tumblr-color;
+}
+
+.btn-social.tumblr:hover,
+.btn-social.tumblr.solid {
+    color: #fff;
+    background-color: $tumblr-color;
+}

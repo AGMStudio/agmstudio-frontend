@@ -1,0 +1,68 @@
+.animated-2x {
+    animation-duration: .5s;
+}
+
+.animated-3x {
+    animation-duration: .25s;
+}
+
+.animated-slow {
+    animation-duration: 2s;
+}
+
+@keyframes flipCenter {
+    from {
+        transform: perspective(100000px) rotate3d(1, 0, 0, 90deg);
+        animation-timing-function: ease-in;
+
+        opacity: 0;
+    }
+
+    40% {
+        transform: perspective(100000px) rotate3d(1, 0, 0, 0deg);
+        animation-timing-function: ease-in;
+    }
+
+    60% {
+        transform: perspective(100000px) rotate3d(1, 0, 0, 0deg);
+
+        opacity: 1;
+    }
+
+    80% {
+        transform: perspective(100000px) rotate3d(1, 0, 0, 0deg);
+    }
+
+    100% {
+        transform: perspective(100000px);
+    }
+}
+
+.flipCenter {
+    animation-name: flipCenter;
+
+    backface-visibility: visible !important;
+}
+
+@keyframes desployDown {
+    from {
+        transform: scaleY(0);
+        transform-origin: top;
+        //animation-timing-function: ease-in;
+
+        //opacity: 0;
+    }
+
+
+    100% {
+        transform: scaleY(1);
+        transform-origin: top;
+        opacity: 1;
+    }
+}
+
+.desployDown {
+    animation-name: desployDown;
+
+    backface-visibility: visible !important;
+}
