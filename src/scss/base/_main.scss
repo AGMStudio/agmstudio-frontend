@@ -1,0 +1,112 @@
+/* --------------------------------------------------------------------------*/
+/* Base
+/* --------------------------------------------------------------------------*/
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    line-height: 1.8em;
+
+    color: #666;
+    background-color: $color-light;
+}
+
+
+
+/* --------------------------------------------------------------------------*/
+/* Reset Styles
+/* --------------------------------------------------------------------------*/
+
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 1000px white inset;
+}
+
+:focus {
+    outline: none !important;
+}
+
+::-moz-focus-inner {
+    border: 0 !important;
+}
+
+/* --------------------------------------------------------------------------*/
+/* Bootstrap theme
+/* --------------------------------------------------------------------------*/
+
+.input-group {
+    input[type='text'] {
+        z-index: 0;
+    }
+}
+
+.input-group-btn {
+    .btn {
+        padding-top: 7px;
+        padding-bottom: 7px;
+    }
+    &:hover,
+    &:focus {
+        z-index: 1;
+    }
+}
+
+.relative {
+    position: relative;
+    z-index: 1;
+    padding-top: 40px;
+    background-color: #fff;
+}
+
+
+/* --------------------------------------------------------------------------*/
+/* Header Page
+/* --------------------------------------------------------------------------*/
+
+.header-page {
+    margin-bottom: 40px;
+    padding: 28px 0 22px 0;
+
+    border-bottom: solid 1px $color-border;
+    background-color: $color-light-alt;
+    .container {
+        position: relative;
+        .breadcrumb {
+            position: absolute;
+            right: 20px;
+
+            display: inline-block;
+
+            margin: 3px 0 0 0;
+            padding: 0;
+
+            vertical-align: top;
+
+            border-radius: 0;
+        }
+    }
+}
+
+.header-title {
+    font-size: 2em;
+    line-height: 100%;
+
+    display: inline-block;
+
+    margin: 0;
+
+    vertical-align: middle;
+}
+
+.site-name {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+
+    color: $color-primary;
+    strong {
+        font-weight: 700;
+
+        text-transform: capitalize;
+
+        color: $color-dark;
+    }
+}

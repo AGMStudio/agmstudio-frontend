@@ -1,0 +1,80 @@
+/* --------------------------------------------------------------------------*/
+/* Home Page
+/* --------------------------------------------------------------------------*/
+
+.ag-hero {
+    padding: 28px 0 22px 0;
+
+    border-bottom: solid 1px $color-border;
+    background-color: $color-light-alt;
+    min-height: 400px;
+
+    background-image: url('../img/bg_slider_black_left.png'),
+    url('../img/bg_slider_black_right.png'),
+    url('../img/bg_slider_blue_left.png'),
+    url('../img/bg_slider_blue_right.png');
+    background-repeat: no-repeat;
+    background-position: left bottom, 100% bottom, left bottom, right bottom;
+
+    transition: all ease 1s;
+
+    &:hover {
+        background-position: -2% 102%, 103% 103%, -2% 102%, 103% 103%;
+    }
+
+    .title {
+        text-align: center;
+        font-size: 30px;
+        text-transform: capitalize;
+        margin-bottom: 20px;
+    }
+
+    .ag-hero-list {
+        margin: 20px 0 0 15px;
+
+        li {
+            font-size: 16px;
+            margin: 10px 0;
+            line-height: 1.8em;
+            list-style: none;
+            list-style-position: outside;
+            position:relative;
+
+            strong {
+                font-weight: 600;
+            }
+        }
+
+        li::before {
+            content: "\f105";
+            font-family: FontAwesome;
+            left:-25px;
+            font-size: 1.4em;
+            color: $color-success;
+            position:absolute;
+            top:0px;
+        }
+    }
+
+    .ag-hero-buttons {
+        margin-top: 40px;
+        text-align: right;
+
+        a {
+            display: inline-block;
+            vertical-align: top;
+            margin-left: 20px;
+        }
+    }
+
+    .ag-hero-img {
+        margin: 0 0 -22px 0;
+        position: relative;
+        bottom: 0;
+        vertical-align: bottom;
+
+        img {
+            margin: 0 auto;
+        }
+    }
+}

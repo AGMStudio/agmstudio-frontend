@@ -1,19 +1,23 @@
 // Google Fonts
 @import url(http://fonts.googleapis.com/css?family=Oswald:700,300|Open+Sans:400,300,600|Open+Sans+Condensed:300,400|Roboto:100,300,400|Roboto+Condensed:300,400|Lato:300,400);
 
-@import 'variables';
-@import 'mixins';
-@import 'animations';
+@import 'base/config';
+@import 'base/mixins';
+@import 'base/animations';
+@import 'base/utilities';
+@import 'base/main';
 
-@import 'components/typography';
-@import 'components/icons';
-@import 'components/social-buttons';
-@import 'components/buttons.scss';
-@import 'components/forms.scss';
-@import 'components/navs.scss';
-@import 'components/navbar.scss';
-@import 'components/topbar.scss';
-@import 'components/panels.scss';
+@import 'modules/typography';
+@import 'modules/icons';
+@import 'modules/social-buttons';
+@import 'modules/buttons.scss';
+@import 'modules/forms.scss';
+@import 'modules/navs.scss';
+@import 'modules/navbar.scss';
+@import 'modules/topbar.scss';
+@import 'modules/panels.scss';
 
-@import 'main';
-@import 'responsive';
+@import 'pages/home.scss';
+@import 'pages/blog.scss';
+
+@import 'base/responsive';
