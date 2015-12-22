@@ -14,7 +14,7 @@
 <div class="container">
     <div class="row">
         <div class="col-md-8">
-            <div class="panel panel-container">
+            <div class="panel panel-white">
                 <div class="blog-post">
                     <div class="row">
                         <div class="post-img col-xs-4">
@@ -30,7 +30,7 @@
                                     <div class="post-date"><i class="fa fa-clock-o"></i> 28 / 10 / 2015</div>
                                 </div>
                                 <div class="col-xs-4 col-xxs-12">
-                                    <a href="#" class="post-category programacion">Programación</a>
+                                    <a href="#" class="btn btn-block btn-info post-category">General</a>
                                 </div>
                                 <div class="col-xs-4 col-xxs-12">
                                     <a href="#" class="btn btn-primary btn-block post-readmore">Leer más</a>
@@ -54,7 +54,7 @@
                                     <div class="post-date"><i class="fa fa-clock-o"></i> 28 / 10 / 2015</div>
                                 </div>
                                 <div class="col-xs-4 col-xxs-12">
-                                    <a href="#" class="post-category general">General</a>
+                                    <a href="#" class="btn btn-block btn-success post-category">Programación</a>
                                 </div>
                                 <div class="col-xs-4 col-xxs-12">
                                     <a href="#" class="btn btn-primary btn-block post-readmore">Leer más</a>
@@ -78,7 +78,7 @@
                                     <div class="post-date"><i class="fa fa-clock-o"></i> 28 / 10 / 2015</div>
                                 </div>
                                 <div class="col-xs-4 col-xxs-12">
-                                    <a href="#" class="post-category diseno">Diseño</a>
+                                    <a href="#" class="btn btn-block btn-royal post-category">Diseño</a>
                                 </div>
                                 <div class="col-xs-4 col-xxs-12">
                                     <a href="#" class="btn btn-primary btn-block post-readmore">Leer más</a>
@@ -102,7 +102,7 @@
                                     <div class="post-date"><i class="fa fa-clock-o"></i> 28 / 10 / 2015</div>
                                 </div>
                                 <div class="col-xs-4 col-xxs-12">
-                                    <a href="#" class="post-category recursos">Recursos</a>
+                                    <a href="#" class="btn btn-block btn-warning post-category">Recursos</a>
                                 </div>
                                 <div class="col-xs-4 col-xxs-12">
                                     <a href="#" class="btn btn-primary btn-block post-readmore">Leer más</a>
@@ -126,7 +126,7 @@
                                     <div class="post-date"><i class="fa fa-clock-o"></i> 28 / 10 / 2015</div>
                                 </div>
                                 <div class="col-xs-4 col-xxs-12">
-                                    <a href="#" class="post-category programacion">Programación</a>
+                                    <a href="#" class="btn btn-block btn-success post-category">Programación</a>
                                 </div>
                                 <div class="col-xs-4 col-xxs-12">
                                     <a href="#" class="btn btn-primary btn-block post-readmore">Leer más</a>
@@ -138,99 +138,7 @@
             </div>
         </div> <!-- col-md-8 -->
         <div class="col-md-4">
-            <div class="sidebar">
-                <div class="blog-widget">
-                    <header class="blog-widget-title">
-                        <!-- Nav tabs -->
-                        <ul class="nav nav-tabs" role="tablist">
-                            <li role="presentation" class="active"><a href="#popular" aria-controls="popular" role="tab" data-toggle="tab"><i class="fa fa-star"></i> Popular</a></li>
-                            <li role="presentation"><a href="#categories" aria-controls="categories" role="tab" data-toggle="tab"><i class="fa fa-folder-open"></i> Categorías</a></li>
-                            <li role="presentation"><a href="#tags" aria-controls="tags" role="tab" data-toggle="tab"><i class="fa fa-tags"></i> Etiquetas</a></li>
-                        </ul>
-                    </header>
-
-                    <!-- Tab panes -->
-                    <div class="tab-content">
-                        <div role="tabpanel" class="tab-pane fade in active" id="popular">
-                            <div class="widget-popular">
-                                <ul class="media-list popular-posts">
-                                    <li class="media popular-post">
-                                        <div class="media-left">
-                                            <a href="#">
-                                                <img class="media-object" src="<%= assets %>/img/e75.png" alt="...">
-                                            </a>
-                                        </div>
-                                        <div class="media-body">
-                                            <h4 class="media-heading popular-title"><a href="#">Creando una estructura de ficheros para desarrollo frontend</a></h4>
-                                            <a href="#" class="popular-category programacion">Programación</a>
-                                            <div class="popular-date"><i class="fa fa-clock-o"></i> 28/10/2016</div>
-                                        </div>
-                                    </li>
-                                    <li class="media popular-post">
-                                        <div class="media-left">
-                                            <a href="#">
-                                                <img class="media-object" src="holder.js/75x75?theme=sky" alt="...">
-                                            </a>
-                                        </div>
-                                        <div class="media-body">
-                                            <h4 class="media-heading popular-title"><a href="#">10 Sitios que todo desarrollador de videojuegos debería conocer</a></h4>
-                                            <a href="#" class="popular-category diseno">Diseño</a>
-                                            <div class="popular-date"><i class="fa fa-clock-o"></i> 28/10/2016</div>
-                                        </div>
-                                    </li>
-                                    <li class="media popular-post">
-                                        <div class="media-left">
-                                            <a href="#">
-                                                <img class="media-object" src="holder.js/75x75?theme=lava" alt="...">
-                                            </a>
-                                        </div>
-                                        <div class="media-body">
-                                            <h4 class="media-heading popular-title"><a href="#">Nuestro libro: Desarrollo web frontend profesional</a></h4>
-                                            <a href="#" class="popular-category general">General</a>
-                                            <div class="popular-date"><i class="fa fa-clock-o"></i> 28/10/2016</div>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div role="tabpanel" class="tab-pane fade" id="categories">
-                            <ul class="blog-categories list-unstyled">
-                                <li class="general"><a href="#">General</a></li>
-                                <li class="diseno"><a href="#">Diseño</a></li>
-                                <li class="programacion"><a href="#">Programación</a></li>
-                                <li class="recursos"><a href="#">Recursos</a></li>
-                            </ul>
-                        </div>
-                        <div role="tabpanel" class="tab-pane fade" id="tags">
-                            <div class="blog-cloudtags">
-                                <a href="#">HTML <span>5</span></a>
-                                <a href="#">Gulp <span>5</span></a>
-                                <a href="#">SASS <span>5</span></a>
-                                <a href="#">Javascript <span>8</span></a>
-                                <a href="#">Frontend <span>11</span></a>
-                                <a href="#">Responsive <span>51</span></a>
-                                <a href="#">Bower <span>33</span></a>
-                                <a href="#">CSS <span>41</span></a>
-                                <a href="#">Javascript <span>8</span></a>
-                                <a href="#">Frontend <span>11</span></a>
-                                <a href="#">Responsive <span>51</span></a>
-                                <a href="#">Bower <span>33</span></a>
-                            </div>
-                        </div>
-                    </div>
-                </div> <!-- blog-widget -->
-                <div class="blog-widget widget-book">
-                    <div class="widget-book-img">
-                        <a href="#"><img src="<%= assets %>/img/portada_blog.png" class="img-responsive" alt=""></a>
-                    </div>
-                    <div class="widget-book-content">
-                        <h4><a href="#">¡Consigue el libro de AGMStudio!</a></h4>
-                        <h5>Desarrollo Web Frontend Profesional</h5>
-                        <p>Aprende a estructurar y automatizar proyectos frontend como un profesional del desarrollo web con nuestro libro.</p>
-                        <a href="https://sellfy.com/p/Z8Ek/" id="Z8Ek" class="sellfy-buy-button">Buy now</a>
-                    </div>
-                </div> <!-- blog-widget -->
-            </div>
+            <!-- build:include sidebar.html --><!-- /build -->
         </div>
     </div> <!-- row -->
 </div> <!-- container -->

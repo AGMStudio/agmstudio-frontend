@@ -1,0 +1,151 @@
+.wrap-autor {
+    background-image: url('../img/back_profile.jpg');
+    background-size: cover;
+    background-position: center center;
+}
+
+.autor-title {
+    font-size: 3rem;
+    margin: 0 0 7rem 0;
+}
+
+.title-autor {
+    margin-bottom: 7rem;
+    font-family: 'Lato';
+    background-color: fade-out($color-primary, 0.7);
+    padding: 8rem 0;
+
+    h1 {
+        color: #fff;
+        font-size: 4rem;
+        margin: 0;
+        text-shadow: 2px 2px 3px rgba(0,0,0,.7);
+    }
+
+    h2 {
+        font-size: 2.3rem;
+        letter-spacing: 0.15rem;
+        text-shadow: 2px 2px 3px rgba(0,0,0,.7);
+    }
+
+    a {
+        margin: 1.5rem 1rem;
+    }
+}
+
+
+.panel-autor {
+    padding: 2rem;
+    position: relative;
+
+    &:after {
+        position: absolute;
+        content: " ";
+        background-image: url('../img/UpWhitheTriangle.png');
+        top: -2.3rem;
+        left: 8rem;
+        width: 2.8rem;
+        height: 2.3rem;
+    }
+
+
+    .autor-photo {
+        position: absolute;
+        right: 3rem;
+        top: -5.4rem;
+    }
+
+    .panel-autor-title {
+        margin-top: 0.5rem;
+        color: $color-primary;
+    }
+}
+
+/* Timeline 2 */
+
+.timeline-title {
+    font-size: 3rem;
+    margin: 0 0 3rem 0;
+}
+
+@media (min-width: 768px) {
+    .timeline-2 {
+
+        border-left: solid 5px #eee;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        padding-left: 20px;
+        margin-left: 110px;
+    }
+
+    .timeline-2 li {
+        position: relative;
+    }
+
+
+    .timeline-2-point {
+        top: 24px;
+        left: -10px;
+        width: 10px;
+        height: 10px;
+        position: absolute;
+        background: $color-primary;
+        margin: 0 0 0 -17px;
+        box-shadow: 0 0 0 4px #eee;
+        -webkit-font-smoothing: antialiased;
+        border-radius: 30px;
+        z-index: 20;
+    }
+
+    .timeline-2 li:hover .timeline-2-point {
+        background-color: #444;
+    }
+
+    .timeline-2 li .timeline-time {
+        position: relative;
+        top: 0px;
+        left: -150px;
+        z-index: 20;
+        text-align: right;
+        display: block;
+        width: 100px;
+    }
+
+    .timeline-2 li .timeline-time span {
+        display: block;
+        font-size: 1.6em;
+    }
+
+    .timeline-2 li .panel,
+    .timeline-2 li .alert,
+    .timeline-2 li blockquote {
+        margin-top: -45px;
+        position: relative;
+        top: 0;
+    }
+}
+
+@media (max-width: 767px) {
+
+    .timeline-2 {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .timeline-2-point {
+        display: none
+    }
+
+    .timeline-2 li {
+        margin-bottom: 40px;
+    }
+
+    .timeline-2 li .timeline-time {
+     font-size: 1.6em;
+     padding-bottom: 20px;
+     display: block;
+ }
+
+}

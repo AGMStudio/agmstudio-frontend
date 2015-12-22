@@ -2,6 +2,12 @@
 .panel {
     box-shadow: none;
     border: none;
+    border-radius: 0;
+
+    &.panel-white {
+        background-color: #fff;
+        border: solid 1px $color-border;
+    }
 
     .panel-heading-link {
         padding: 0;
@@ -51,9 +57,76 @@
             margin-bottom: 0;
         }
     }
+
+    .panel-heading {
+        & > i {
+            margin-right: 0.5rem;
+        }
+    }
 }
 
 .panel-dark {
+    background-color: lighten($color-dark, 3%);
+    color: $color-light-alt;
+
+    .panel-heading {
+        background-color: $color-dark;
+        position: relative;
+
+        .timeline-type {
+            position: absolute;
+            right: 6rem;
+            top: 1rem;
+            font-size: 1.3rem;
+        }
+
+        .panel-heading-plus {
+            color: #fff;
+            display: inline-block;
+            position: absolute;
+            right: 1.5rem;
+            font-size: 2rem;
+            background-color: lighten($color-dark, 8%);
+            border-radius: 100rem;
+            width: 2.6rem;
+            height: 2.6rem;
+            text-align: center;
+            transition: all ease 0.5s;
+
+            &:after {
+                content: "_";
+                display: block;
+                margin-top: -1rem;
+                font-weight: 600;
+            }
+
+            &:hover {
+                background-color: $color-primary
+            }
+        }
+
+        .panel-heading-plus.collapsed {
+            &:after {
+                content: "+";
+                margin-top: 0;
+            }
+        }
+
+        &.arrow-left::after {
+            content: "";
+            position: absolute;
+            left: -0.8rem;
+            top: 1.8rem;
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 6.5px 8px 6.5px 0;
+            border-color: transparent $color-dark transparent transparent;
+        }
+    }
+
+
+
     .panel-heading-link {
         a {
             background-color: $color-dark;
@@ -73,283 +146,5 @@
         border-top: none;
         color: $color-light;
         background-color: lighten($color-dark, 5%);;
-    }
-}
-
-.blog-widget {
-    margin-bottom: 40px;
-
-    .blog-widget-title {
-        background-color: $color-dark;
-
-        .nav-tabs {
-            border-bottom: none;
-
-            li {
-                width: 33.33333%;
-                text-align: center;
-                font-family: 'Roboto', sans-serif;
-                text-transform: uppercase;
-                font-weight: 400;
-                font-size: 11px;
-                margin: 0;
-
-                a {
-                    border-radius: 0;
-                    border: 0;
-                    margin: 0;
-                    color: $color-medium;
-                    transition: all ease 0.5s;
-                    padding: 18px 0;
-
-                    &:hover,
-                    &:focus {
-                        background-color: transparent;
-                        color: $color-light;
-                    }
-
-                    i {
-                        margin-right: 2px;
-                    }
-                }
-
-                &.active {
-                    a {
-                        background-color: transparent;
-                        color: #fff;
-
-                        i {
-                            color: $color-primary;
-                        }
-
-                        &:hover {
-                            background-color: transparent;
-                            color: $color-light;
-                        }
-                    }
-                }
-            }
-        }
-    }
-
-    .tab-content {
-        //background-color: #fff;
-        background-color: lighten($color-dark, 3%);
-        color: #fff;
-        padding: 20px;
-        //border: solid 1px $color-border;
-        border-top: 0;
-    }
-
-    .widget-popular {
-        .popular-post {
-            margin-bottom: 20px;
-
-            &:last-child {
-                margin-bottom: 0;
-            }
-
-            .popular-title {
-                font-size: 15px;
-                font-weight: 400;
-                line-height: 22px;
-
-                a {
-                    color: $color-light;
-                    transition: all ease 0.5s;
-
-                    &:hover {
-                        color: $color-success;
-                    }
-                }
-            }
-
-            .popular-date {
-                display: inline-block;
-                //background-color: $color-light;
-                text-transform: uppercase;
-                font-size: 11px;
-                //border: 1px solid $color-border;
-                padding: 0 5px;
-
-                i {
-                    margin-right: 3px;
-                }
-            }
-
-            .popular-category {
-                text-transform: uppercase;
-                font-size: 11px;
-                //color: #fff;
-                display: inline-block;
-                padding: 0 5px;
-                border-radius: 3px;
-
-                &.programacion {
-                    color: $color-info;
-                }
-                &.recursos {
-                    color: $color-royal;
-                }
-                &.diseno {
-                    color: $color-warning;
-                }
-
-                &.general {
-                    color: $color-success;
-                }
-            }
-        }
-    }
-}
-
-.blog-categories {
-    li {
-        font-size: 16px;
-        font-family: 'Roboto', sans-serif;
-        text-transform: uppercase;
-        margin-bottom: 15px;
-
-        &:last-child {
-            margin-bottom: 0;
-        }
-
-
-        a {
-            display: block;
-            color: #fff;
-            padding: 14px 15px;
-            border: solid 1px;
-            transition: all ease 0.5s;
-
-        }
-    }
-
-    .general {
-        a {
-            border-color: $color-success;
-            color: $color-success;
-
-            &:hover {
-                background-color: $color-success;
-                color: #fff;
-            }
-        }
-    }
-
-    .diseno {
-        a {
-            border-color: $color-royal;
-            color: $color-royal;
-
-            &:hover {
-                background-color: $color-royal;
-                color: #fff;
-            }
-        }
-    }
-
-    .programacion {
-        a {
-            border-color: $color-info;
-            color: $color-info;
-
-            &:hover {
-                background-color: $color-info;
-                color: #fff;
-            }
-        }
-    }
-
-    .recursos {
-        a {
-            border-color: $color-warning;
-            color: $color-warning;
-
-            &:hover {
-                background-color: $color-warning;
-                color: #fff;
-            }
-        }
-    }
-}
-
-.blog-cloudtags {
-    a {
-        color: $color-light-alt;
-        display: inline-block;
-        border: solid 1px $color-medium;
-        border-radius: 2px;
-        padding: 1px 5px;
-        margin: 5px 3px;
-        font-size: 11px;
-        text-transform: uppercase;
-        transition: all ease 0.5s;
-
-        span {
-            border-left: solid 1px $color-medium;
-            margin: -2px 0px -2px 4px;
-            display: inline-block;
-            padding-left: 7px;
-        }
-
-        &:hover {
-            background-color: $color-primary;
-            border-color: $color-primary;
-
-            span {
-                border-color: darken($color-primary, 5%)
-            }
-        }
-    }
-}
-
-.widget-book {
-    .widget-book-img {
-        background-color: $color-warning;
-        transition: all ease 4s;
-
-
-        img {
-            transition: all ease 1s;
-            transform: translateY(10px);
-            margin: 0 auto;
-
-            &:hover {
-                transform: translateY(0px);
-            }
-        }
-
-        &:hover {
-            background-color: $color-info;
-        }
-    }
-
-    .widget-book-content {
-        background-color: #fff;
-        border: solid 1px $color-border;
-        padding: 20px;
-        position: relative;
-        z-index: 1;
-        text-align: center;
-
-        h4 {
-            color: $color-danger;
-
-            a {
-                color: $color-danger;
-            }
-        }
-
-        h5 {
-            font-size: 16px;
-            color: $color-primary;
-            text-align: center;
-            margin-bottom: 20px;
-        }
-
-        a {
-            //text-align: right;
-        }
     }
 }
