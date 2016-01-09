@@ -34,6 +34,10 @@
     padding: 1.2rem 2.4rem;
 }
 
+.btn-square {
+    border-radius: 0;
+}
+
 .btn.btn-default {
     @include btn-style(darken($color-light, 6%));
 }
@@ -71,3 +75,5 @@
         background-color: #fff;
     }
 }
+
+/* Social */

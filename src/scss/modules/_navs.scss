@@ -1,4 +1,46 @@
 /* --------------------------------------------------------------------------*/
+/* Navs Pills
+/* --------------------------------------------------------------------------*/
+
+.nav-pills {
+    margin: 20px 0;
+
+    li {
+        a {
+            background-color: $color-dark;
+            color: $color-light;
+            padding: 1.5rem;
+            text-transform: uppercase;
+            margin: 0 1rem;
+            font-family: 'Roboto';
+            font-size: 1.2rem;
+            line-height: 1;
+            font-weight: 300;
+
+            &:first-child {
+                margin-left: 0;
+            }
+
+            &:hover,
+            &:focus {
+                background-color: darken($color-dark, 10%);;
+            }
+        }
+    }
+
+    li.active {
+        a {
+            background-color: $color-primary;
+
+            &:hover,
+            &:focus {
+                background-color: $color-primary;
+            }
+        }
+    }
+}
+
+/* --------------------------------------------------------------------------*/
 /* Collapses Components
 /* --------------------------------------------------------------------------*/
 

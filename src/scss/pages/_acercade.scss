@@ -6,14 +6,13 @@
 
 .autor-title {
     font-size: 3rem;
-    margin: 0 0 7rem 0;
 }
 
 .title-autor {
     margin-bottom: 7rem;
     font-family: 'Lato';
-    background-color: fade-out($color-primary, 0.7);
-    padding: 8rem 0;
+    background-color: fade-out($color-primary, 0.8);
+    padding: 4rem 0;
 
     h1 {
         color: #fff;
@@ -31,34 +30,18 @@
     a {
         margin: 1.5rem 1rem;
     }
-}
-
-
-.panel-autor {
-    padding: 2rem;
-    position: relative;
-
-    &:after {
-        position: absolute;
-        content: " ";
-        background-image: url('../img/UpWhitheTriangle.png');
-        top: -2.3rem;
-        left: 8rem;
-        width: 2.8rem;
-        height: 2.3rem;
-    }
-
 
     .autor-photo {
-        position: absolute;
-        right: 3rem;
-        top: -5.4rem;
+        border: solid 7px rgba(255, 255, 255, 0.3);
+        border-radius: 200px;
+        margin-bottom: 2rem;
     }
+}
 
-    .panel-autor-title {
-        margin-top: 0.5rem;
-        color: $color-primary;
-    }
+.nav-pills-aptitudes {
+    margin: 0 auto;
+    display: inline-block;
+    text-align: center;
 }
 
 /* Timeline 2 */

@@ -110,3 +110,101 @@ input:-webkit-autofill {
         color: $color-dark;
     }
 }
+
+.wrap-light-alt {
+    background-color: $color-light-alt;
+    border-top: solid 1px $color-border;
+    border-bottom: solid 1px $color-border;
+    padding: 4rem 0;
+}
+
+/* Content Box */
+
+.content-box {
+    display: block;
+    text-align: center;
+    overflow: hidden;
+    padding: 1.5rem;
+    margin-bottom: 2.8rem;
+}
+
+.content-box.box-default {
+    background-color: #f6f6f6;
+}
+
+.content-box.box-default:hover {
+    background-color: #f3f3f3;
+}
+
+
+.content-box.box-primary .content-box-title,
+.content-box.box-info .content-box-title,
+.content-box.box-success .content-box-title,
+.content-box.box-warning .content-box-title,
+.content-box.box-danger .content-box-title,
+.content-box.box-royal .content-box-title {
+    color: #fff;
+}
+
+.content-box-title.counter {
+    font-size: 3em;
+    color: #333;
+    margin-top: 0;
+}
+
+.content-box.box-primary {
+    background-color: $color-primary;
+    color: #fff;
+}
+
+.content-box.box-success {
+    background-color: $color-success;
+    color: #fff;
+}
+
+.content-box.box-info {
+    background-color: $color-info;
+    color: #fff;
+}
+
+.content-box.box-warning {
+    background-color: $color-warning;
+    color: #fff;
+}
+
+.content-box.box-danger {
+    background-color: $color-danger;
+    color: #fff;
+}
+
+
+.content-box.box-royal {
+    background-color: $color-royal;
+    color: #fff;
+}
+
+
+.content-box.box-primary:hover {
+    background-color: darken($color-primary, 5%);
+}
+
+.content-box.box-success:hover {
+    background-color: darken($color-success, 5%);
+}
+
+.content-box.box-info:hover {
+    background-color: darken($color-info, 5%);
+}
+
+.content-box.box-warning:hover {
+    background-color: darken($color-warning, 5%);
+}
+
+.content-box.box-danger:hover {
+    background-color: darken($color-danger, 5%);
+}
+
+
+.content-box.box-royal:hover {
+    background-color: darken($color-royal, 5%);
+}

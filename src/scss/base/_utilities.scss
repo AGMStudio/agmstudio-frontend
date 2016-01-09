@@ -26,8 +26,33 @@
     padding-bottom: 0 !important;
 }
 
+.mb-2 {
+    margin-bottom: 2rem;
+}
 
+.mb-4 {
+    margin-bottom: 4rem;
+}
 
+.mb-6 {
+    margin-bottom: 6rem;
+}
+
+.mt-2 {
+    margin-top: 2rem;
+}
+
+.mt-4 {
+    margin-top: 4rem;
+}
+
+.mt-6 {
+    margin-top: 6rem;
+}
+
+.small-caps {
+    font-variant: small-caps;
+}
 
 .right-line {
     position: relative;
@@ -78,4 +103,8 @@
 
 .primary-color {
     color: $color-primary;
+}
+
+.light-color {
+    color: $color-light;
 }

@@ -17,9 +17,12 @@
 
     color: #aaa;
     border: solid 1px #aaa;
+    border-radius: 0;
 }
 
-
+.btn-social.btn-block {
+    width: 100%;
+}
 
 .btn-social:hover {
     text-decoration: none;
@@ -218,6 +221,18 @@
 .btn-social.git {
     color: $git-color;
     border-color: $git-color;
+}
+
+.btn-social.github:hover,
+.btn-social.github.solid {
+    color: #fff;
+    background-color: $github-color;
+}
+
+
+.btn-social.github {
+    color: $github-color;
+    border-color: $github-color;
 }
 
 .btn-social.git:hover,
