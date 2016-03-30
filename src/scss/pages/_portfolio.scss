@@ -22,14 +22,21 @@
             color: #fff;
         }
 
-        img:hover {
-            bottom: 0;
+        &:hover {
+            //top: 0;
+            //transform: translateY(0px);
+            //background-color: fade-out($color-dark, 0.1);
         }
 
-        &:hover {
+        &.open {
             top: 0;
             transform: translateY(0px);
-            //background-color: fade-out($color-dark, 0.1);
+
+            .portfolio-item-info-header {
+                a.portfolio-item-more {
+
+                }
+            }
         }
 
         .portfolio-item-info-header {
