@@ -104,3 +104,29 @@
     }
 
 }
+
+.text-icon {
+    margin-bottom: 30px;
+    overflow: hidden;
+
+    .agm-icon {
+        float: left;
+        margin-top: 5px;
+    }
+
+    .text-icon-title {
+        margin: 0;
+        font-size: 1.8rem;
+        color: $color-primary;
+    }
+
+    .text-icon-content {
+        padding-left: 70px;
+        font-size: 1.3rem;
+        line-height: 2.4rem;
+    }
+
+    .text-icon-content p {
+        margin-top: 5px;
+    }
+}
