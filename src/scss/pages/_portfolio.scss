@@ -42,7 +42,20 @@
         font-size: 1.2rem;
 
         .sales {
-            color: $color-success;
+			i {
+				color: $color-warning;
+			}
+
+            padding: .7rem;
+            background-color: rgba(0, 0, 0, 0.3);
+            border: solid 1px rgba(255, 255, 255, 0.2);
+        }
+
+		.price {
+			i {
+				color: $color-success;
+			}
+
             padding: .7rem;
             background-color: rgba(0, 0, 0, 0.3);
             border: solid 1px rgba(255, 255, 255, 0.2);
@@ -202,4 +215,27 @@ figure.effect-jazz:hover p {
 	opacity: 1;
 	-webkit-transform: scale3d(1,1,1);
 	transform: scale3d(1,1,1);
+}
+
+@media (max-width: 550px) {
+	figure.effect-jazz h2 {
+		font-size: 2rem;
+		padding-top: 0;
+	}
+
+	figure.effect-jazz p {
+		font-size: 1.2rem;
+	}
+
+	figure.effect-jazz {
+		.info {
+			text-align: center;
+			margin: 0 auto;
+		}
+	}
+
+	.portfolio-btn .btn {
+		font-size: 1rem;
+		margin-left: 0px;
+	}
 }
