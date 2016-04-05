@@ -197,6 +197,11 @@ figure.effect-jazz a {
 	opacity: 0;
 }
 
+figure.effect-jazz a.effect-jazz-focus {
+	cursor: default;
+	color: #fff;
+}
+
 figure.effect-jazz:hover img {
 	opacity: 0.3;
 	-webkit-transform: scale3d(1.05,1.05,1);
