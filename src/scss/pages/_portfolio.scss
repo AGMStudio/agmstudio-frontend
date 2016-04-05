@@ -179,7 +179,8 @@ figure.effect-jazz p {
 }
 
 figure.effect-jazz h2 {
-	padding-top: 5%;
+	padding-top: 3rem;
+	padding-left: 2rem;
 	-webkit-transition: -webkit-transform 0.35s;
 	transition: transform 0.35s;
     opacity: 0;
@@ -187,6 +188,7 @@ figure.effect-jazz h2 {
 
 figure.effect-jazz p {
 	padding-top: 0.5em;
+	padding-left: 2rem;
     margin-right: 21%;
 	text-transform: none;
 	font-size: 0.8em;
@@ -200,6 +202,12 @@ figure.effect-jazz a {
 figure.effect-jazz a.effect-jazz-focus {
 	cursor: default;
 	color: #fff;
+	display: block;
+	position: absolute;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	right: 0;
 }
 
 figure.effect-jazz:hover img {
@@ -225,7 +233,7 @@ figure.effect-jazz:hover p {
 @media (max-width: 550px) {
 	figure.effect-jazz h2 {
 		font-size: 2rem;
-		padding-top: 0;
+
 	}
 
 	figure.effect-jazz p {
@@ -234,13 +242,38 @@ figure.effect-jazz:hover p {
 
 	figure.effect-jazz {
 		.info {
-			text-align: center;
-			margin: 0 auto;
+			text-align: right;
+			padding-right: 1.8rem;
+			display: block;
+			width: 100%;
 		}
 	}
 
 	.portfolio-btn .btn {
 		font-size: 1rem;
 		margin-left: 0px;
+	}
+}
+
+@media (max-width: 350px) {
+	figure.effect-jazz h2 {
+		font-size: 1.8rem;
+		padding-top: 0;
+	}
+
+	figure.effect-jazz p {
+		font-size: 1rem;
+	}
+
+	figure.effect-jazz {
+		.info {
+			display: none;
+		}
+	}
+
+	.portfolio-btn .btn {
+		font-size: 1rem;
+		margin-left: 0px;
+		margin-bottom: 2rem;
 	}
 }
