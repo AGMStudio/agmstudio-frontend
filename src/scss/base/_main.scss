@@ -3,12 +3,12 @@
 /* --------------------------------------------------------------------------*/
 
 body {
+    color: #666;
+    background-color: $color-light;
+
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
     line-height: 1.8em;
-
-    color: #666;
-    background-color: $color-light;
 
     &.navbar-fixed-mode {
         margin-top: 90px;
@@ -57,7 +57,9 @@ input:-webkit-autofill {
 .relative {
     position: relative;
     z-index: 1;
+
     padding-top: 40px;
+
     background-color: #fff;
 }
 
@@ -91,45 +93,48 @@ input:-webkit-autofill {
 }
 
 .header-title {
-    font-size: 2em;
-    line-height: 100%;
-
     display: inline-block;
 
     margin: 0;
 
     vertical-align: middle;
+
+    font-size: 2em;
+    line-height: 100%;
 }
 
 .site-name {
+    color: $color-primary;
+
     font-family: 'Oswald', sans-serif;
     font-weight: 700;
-
-    color: $color-primary;
     strong {
-        font-weight: 700;
-
         text-transform: capitalize;
 
         color: $color-dark;
+
+        font-weight: 700;
     }
 }
 
 .wrap-light-alt {
-    background-color: $color-light-alt;
+    padding: 4rem 0;
+
     border-top: solid 1px $color-border;
     border-bottom: solid 1px $color-border;
-    padding: 4rem 0;
+    background-color: $color-light-alt;
 }
 
 /* Content Box */
 
 .content-box {
     display: block;
-    text-align: center;
     overflow: hidden;
-    padding: 1.5rem;
+
     margin-bottom: 2.8rem;
+    padding: 1.5rem;
+
+    text-align: center;
 }
 
 .content-box.box-default {
@@ -151,40 +156,42 @@ input:-webkit-autofill {
 }
 
 .content-box-title.counter {
-    font-size: 3em;
-    color: #333;
     margin-top: 0;
+
+    color: #333;
+
+    font-size: 3em;
 }
 
 .content-box.box-primary {
-    background-color: $color-primary;
     color: #fff;
+    background-color: $color-primary;
 }
 
 .content-box.box-success {
-    background-color: $color-success;
     color: #fff;
+    background-color: $color-success;
 }
 
 .content-box.box-info {
-    background-color: $color-info;
     color: #fff;
+    background-color: $color-info;
 }
 
 .content-box.box-warning {
-    background-color: $color-warning;
     color: #fff;
+    background-color: $color-warning;
 }
 
 .content-box.box-danger {
-    background-color: $color-danger;
     color: #fff;
+    background-color: $color-danger;
 }
 
 
 .content-box.box-royal {
-    background-color: $color-royal;
     color: #fff;
+    background-color: $color-royal;
 }
 
 
