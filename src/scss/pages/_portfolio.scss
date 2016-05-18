@@ -1,45 +1,114 @@
 .portfolio-item {
-	background-color: #fff;
+    background-color: #fff;
+    margin-bottom: 2rem;
 
-	.portfolio-item-info {
-		padding: 1rem 2rem;
-		border: solid 1px $color-border;
-		background-color: #fff;
-		color: $color-dark;
+    .portfolio-item-info {
+        padding: 1rem 2rem;
 
-		.portfolio-item-title {
-			color: $color-dark;
-		}
-	}
+        color: $color-dark;
+        border: solid 1px $color-border;
+        background-color: #fff;
 
-	.portfolio-item-btn-group {
-		display: table;
-		width: 100%;
+        .portfolio-item-title {
+            color: $color-primary;
+        }
 
-		a {
-			text-align: center;
-			display: table-cell;
-			background-color: lighten($color-border, 8);
-			padding: 0.4rem 0;
-			color: $color-medium;
-			width: 50%;
-			margin: 0;
-			border: solid 1px $color-border;
-			border-top: 0;
-			transition: all 0.5s;
+        .portfolio-item-tags {
+            margin-bottom: 1rem;
+            
+            .portfolio-item-tag {
+                font-size: 1.1rem;
+                background-color: $color-light;
+                border: solid 1px $color-border;
+                padding: 0.4rem 0.8rem;
+                margin-right: 1rem;
+                border-radius: 3px;
 
-			i {
-				margin-right: 1rem;
-			}
+                &.tag-wp {
+                    background-color: $wordpress-color;
+                    border-color: darken($wordpress-color, 10);
+                    color: #fff;
+                }
 
-			&:hover {
-				background-color: $color-border;
-			}
-		}
-	}
+                &.tag-gulp {
+                    background-color: $gulp-color;
+                    border-color: darken($gulp-color, 10);
+                    color: #fff;
+                }
 
-	.portfolio-item-img {
-		background-color: $color-dark;
-		//padding: 1.5rem;
-	}
+                &.tag-less {
+                    background-color: $less-color;
+                    border-color: darken($less-color, 10);
+                    color: #fff;
+                }
+
+                &.tag-sass {
+                    background-color: $sass-color;
+                    border-color: darken($sass-color, 10);
+                    color: #fff;
+                }
+
+                &.tag-grunt {
+                    background-color: $grunt-color;
+                    border-color: darken($grunt-color, 10);
+                    color: #fff;
+                }
+            }
+        }
+    }
+
+    .portfolio-item-btn-group {
+        display: table;
+
+        width: 100%;
+
+        a {
+            display: table-cell;
+
+            width: 50%;
+            margin: 0;
+            padding: 0.4rem 0;
+
+            transition: all 0.5s;
+            text-align: center;
+
+            color: $color-medium;
+            border: solid 1px $color-border;
+            border-top: 0;
+            background-color: lighten($color-border, 8);
+
+            &:first-child {
+                border-right: 0;
+            }
+
+            i {
+                margin-right: 1rem;
+            }
+
+            &:hover {
+                background-color: $color-border;
+            }
+        }
+    }
+
+    .portfolio-item-img {
+        background-color: $color-dark;
+        //padding: 1.5rem;
+
+        .carousel-portfolio-item {
+            transition: all 0.5s;
+
+            .carousel-indicators {
+                transition: all 0.5s;
+                opacity: 0;
+                bottom: 0;
+            }
+
+            &:hover {
+                .carousel-indicators {
+                    opacity: 1;
+                }
+            }
+        }
+    }
 }
