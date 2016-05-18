@@ -89,6 +89,34 @@
 .blog-widget {
     margin-bottom: 4rem;
 
+    .blog-widget-search {
+        min-height: 5rem;
+
+        input {
+            min-height: 5rem;
+            border-color: $color-border;
+            box-shadow: none;
+
+            &:focus {
+                border-color: darken($color-border, 5%) !important;
+            }
+        }
+
+        .btn {
+            min-height: 5rem;
+            min-width: 5rem;
+            border-radius: 0;
+            background-color: $color-border;
+            color: $color-medium;
+            text-align: center;
+
+            i {
+                margin-left: 0.4rem;
+                font-size: 1.6rem;
+            }
+        }
+    }
+
     .blog-widget-title {
         background-color: $color-dark;
 
