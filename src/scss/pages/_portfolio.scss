@@ -1,279 +1,45 @@
-
 .portfolio-item {
+	background-color: #fff;
 
-}
+	.portfolio-item-info {
+		padding: 1rem 2rem;
+		border: solid 1px $color-border;
+		background-color: #fff;
+		color: $color-dark;
 
-/* *, *:after, *:before { -webkit-box-sizing: border-box; box-sizing: border-box; } // required */
-.grid {
-	position: relative;
-	clear: both;
-	margin: 0 auto;
-	list-style: none;
-	//text-align: center;
-}
-
-/* Common style */
-.grid figure {
-	position: relative;
-	//float: left;
-	overflow: hidden;
-	//height: auto;
-	//background: #000;
-	//text-align: center;
-	//cursor: pointer;
-    margin-bottom: 40px;
-}
-
-.grid figure img {
-	position: relative;
-    width: 100%;
-}
-
-.grid figure figcaption {
-	padding: 2em;
-	color: #fff;
-	font-size: 1.25em;
-	-webkit-backface-visibility: hidden;
-	backface-visibility: hidden;
-
-    .info {
-        margin-top: 1rem;
-        line-height: 1;
-        font-size: 1.2rem;
-
-        .sales {
-			i {
-				color: $color-warning;
-			}
-
-            padding: .7rem;
-            background-color: rgba(0, 0, 0, 0.3);
-            border: solid 1px rgba(255, 255, 255, 0.2);
-        }
-
-		.price {
-			i {
-				color: $color-success;
-			}
-
-            padding: .7rem;
-            background-color: rgba(0, 0, 0, 0.3);
-            border: solid 1px rgba(255, 255, 255, 0.2);
-        }
-    }
-}
-
-.grid figure figcaption::before,
-.grid figure figcaption::after {
-	pointer-events: none;
-}
-
-.grid figure figcaption {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-}
-
-/* Anchor will cover the whole item by default */
-
-.grid figure h2 {
-    text-transform: uppercase;
-	word-spacing: -0.15em;
-	font-weight: 300;
-    color: #fff;
-}
-
-.grid figure h2 span {
-	font-weight: 400;
-}
-
-.grid figure h2,
-.grid figure p {
-	margin: 0;
-}
-
-.grid figure p {
-	letter-spacing: 1px;
-	font-size: 68.5%;
-}
-
-/*---------------*/
-/***** Jazz *****/
-/*---------------*/
-
-figure.effect-jazz {
-	background: -webkit-linear-gradient(-45deg, $color-dark 0%,$color-dark 100%);
-	background: linear-gradient(-45deg, $color-dark 0%,$color-dark 100%);
-    border: solid 1px $color-border;
-}
-
-figure.effect-jazz img {
-	opacity: 1;
-}
-
-figure.effect-jazz figcaption::after,
-figure.effect-jazz img,
-figure.effect-jazz p {
-	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-	transition: opacity 0.35s, transform 0.35s;
-}
-
-figure.effect-jazz .portfolio-btn {
-    position: absolute;
-    right: 5%;
-    bottom: 5%;
-    display: inline-block;
-
-    .btn {
-        margin-left: 10px;
-    }
-}
-
-figure.effect-jazz a.btn {
-
-	border-radius: 0;
-
-    &.btn-primary {
-        background-color: fade-out($color-primary, 0.5);
-        border: solid 1px darken($color-primary, 15);
-
-        &:hover {
-            border-color: $color-primary;
-        }
-    }
-
-    &.btn-success {
-        background-color: fade-out($color-success, 0.5);
-        border: solid 1px darken($color-success, 15);
-
-        &:hover {
-            border-color: $color-success;
-        }
-    }
-
-}
-
-figure.effect-jazz figcaption::after {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	border-top: 1px solid #fff;
-	border-bottom: 1px solid #fff;
-	content: '';
-	opacity: 0;
-	-webkit-transform: rotate3d(0,0,1,45deg) scale3d(1,0,1);
-	transform: rotate3d(0,0,1,45deg) scale3d(1,0,1);
-	-webkit-transform-origin: 50% 50%;
-	transform-origin: 50% 50%;
-}
-
-figure.effect-jazz h2,
-figure.effect-jazz p {
-	opacity: 1;
-	-webkit-transform: scale3d(0.8,0.8,1);
-	transform: scale3d(0.8,0.8,1);
-}
-
-figure.effect-jazz h2 {
-	padding-top: 3rem;
-	padding-left: 2rem;
-	-webkit-transition: -webkit-transform 0.35s;
-	transition: transform 0.35s;
-    opacity: 0;
-}
-
-figure.effect-jazz p {
-	padding-top: 0.5em;
-	padding-left: 2rem;
-    margin-right: 21%;
-	text-transform: none;
-	font-size: 0.8em;
-	opacity: 0;
-}
-
-figure.effect-jazz a {
-	opacity: 0;
-}
-
-figure.effect-jazz a.effect-jazz-focus {
-	cursor: default;
-	color: #fff;
-	display: block;
-	position: absolute;
-	left: 0;
-	top: 0;
-	bottom: 0;
-	right: 0;
-}
-
-figure.effect-jazz:hover img {
-	opacity: 0.3;
-	-webkit-transform: scale3d(1.05,1.05,1);
-	transform: scale3d(1.05,1.05,1);
-}
-
-figure.effect-jazz:hover figcaption::after {
-	opacity: 1;
-	-webkit-transform: rotate3d(0,0,1,45deg) scale3d(1,1,1);
-	transform: rotate3d(0,0,1,45deg) scale3d(1,1,1);
-}
-
-figure.effect-jazz:hover h2,
-figure.effect-jazz:hover a,
-figure.effect-jazz:hover p {
-	opacity: 1;
-	-webkit-transform: scale3d(1,1,1);
-	transform: scale3d(1,1,1);
-}
-
-@media (max-width: 550px) {
-	figure.effect-jazz h2 {
-		font-size: 2rem;
-
-	}
-
-	figure.effect-jazz p {
-		font-size: 1.2rem;
-	}
-
-	figure.effect-jazz {
-		.info {
-			text-align: right;
-			padding-right: 1.8rem;
-			display: block;
-			width: 100%;
+		.portfolio-item-title {
+			color: $color-dark;
 		}
 	}
 
-	.portfolio-btn .btn {
-		font-size: 1rem;
-		margin-left: 0px;
-	}
-}
+	.portfolio-item-btn-group {
+		display: table;
+		width: 100%;
 
-@media (max-width: 350px) {
-	figure.effect-jazz h2 {
-		font-size: 1.8rem;
-		padding-top: 0;
-	}
+		a {
+			text-align: center;
+			display: table-cell;
+			background-color: lighten($color-border, 8);
+			padding: 0.4rem 0;
+			color: $color-medium;
+			width: 50%;
+			margin: 0;
+			border: solid 1px $color-border;
+			border-top: 0;
+			transition: all 0.5s;
 
-	figure.effect-jazz p {
-		font-size: 1rem;
-	}
+			i {
+				margin-right: 1rem;
+			}
 
-	figure.effect-jazz {
-		.info {
-			display: none;
+			&:hover {
+				background-color: $color-border;
+			}
 		}
 	}
 
-	.portfolio-btn .btn {
-		font-size: 1rem;
-		margin-left: 0px;
-		margin-bottom: 2rem;
+	.portfolio-item-img {
+		background-color: $color-dark;
+		//padding: 1.5rem;
 	}
 }
