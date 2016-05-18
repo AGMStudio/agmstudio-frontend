@@ -28,11 +28,6 @@
 
             .navbar-brand
             {
-                font-family: 'Oswald', sans-serif;
-                font-size: 37px;
-                font-weight: bold;
-                line-height: 100%;
-
                 display: inline-block;
                 float: none;
 
@@ -45,6 +40,11 @@
 
                 color: $color-primary;
 
+                font-family: 'Oswald', sans-serif;
+                font-size: 37px;
+                font-weight: bold;
+                line-height: 100%;
+
 
                 span
                 {
@@ -54,16 +54,17 @@
 
             #slogan
             {
-                font-family: 'Open Sans Condensed', sans-serif;
-                letter-spacing: 0.3px;
-                font-size: 18px;
-                font-weight: 300;
-
                 display: block;
 
                 margin: 0;
 
-                color: lighten($color-medium, 25);;
+                letter-spacing: 0.3px;
+
+                color: lighten($color-medium, 25);
+
+                font-family: 'Open Sans Condensed', sans-serif;
+                font-size: 18px;
+                font-weight: 300;;
             }
         }
     }
@@ -74,31 +75,30 @@
         {
             & > a
             {
-                font-family: 'Oswald', sans-serif;
-                font-size: 1.1em;
-                font-weight: 400;
-
                 min-width: 100px;
                 height: 90px;
                 margin: 0;
                 padding: 15px 10px 0 10px;
 
                 transition: all .1s ease;
-
                 text-align: center;
                 letter-spacing: .05em;
                 text-transform: uppercase;
 
                 color: $color-light;
 
+                font-family: 'Oswald', sans-serif;
+                font-size: 1.1em;
+                font-weight: 400;
+
 
                 .menu-icon
                 {
-                    font-size: 1.6em;
-
                     display: block;
 
                     margin-bottom: 10px;
+
+                    font-size: 1.6em;
                 }
 
                 &:hover,
@@ -156,10 +156,6 @@
         {
             & > a::after
             {
-                font-family: FontAwesome;
-                font-size: 11px;
-                font-weight: normal;
-
                 position: absolute;
                 bottom: 0;
                 left: 48%;
@@ -167,6 +163,10 @@
                 display: inline-block;
 
                 content: '\f107';
+
+                font-family: FontAwesome;
+                font-size: 11px;
+                font-weight: normal;
             }
         }
     } /* .navbar-nav */
@@ -200,8 +200,9 @@
             {
                 .navbar-brand
                 {
-                    font-size: 28px;
                     margin-top: 10px;
+                    word-spacing: -4px;
+                    font-size: 28px;
                 }
 
                 #slogan
@@ -215,6 +216,7 @@
 
 .dropdown-menu {
     padding: 0;
+
     border: 0;
 }
 
@@ -284,5 +286,6 @@
 
 .dropdown-submenu.pull-left > .dropdown-menu {
     left: -100%;
+
     margin-left: 10px;
 }
