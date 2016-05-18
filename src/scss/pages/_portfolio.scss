@@ -1,6 +1,6 @@
 .portfolio-item {
     background-color: #fff;
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
 
     .portfolio-item-info {
         padding: 1rem 2rem;
@@ -15,13 +15,14 @@
 
         .portfolio-item-tags {
             margin-bottom: 1rem;
-            
+
             .portfolio-item-tag {
                 font-size: 1.1rem;
                 background-color: $color-light;
                 border: solid 1px $color-border;
-                padding: 0.4rem 0.8rem;
-                margin-right: 1rem;
+                padding: 0rem 0.8rem;
+                margin: 0rem .5rem .5rem 0rem;
+                display: inline-block;
                 border-radius: 3px;
 
                 &.tag-wp {
@@ -52,6 +53,24 @@
                     background-color: $grunt-color;
                     border-color: darken($grunt-color, 10);
                     color: #fff;
+                }
+            }
+        }
+
+        .portfolio-item-license  {
+            span {
+                background-color: $color-info;
+                border: solid 1px darken($color-info, 5);
+
+                padding: 0rem 1rem;
+                border-radius: 3px;
+                font-size: 1.1rem;
+                display: inline-block;
+                color: #fff;
+
+                &.free {
+                    background-color: $color-success;
+                    border: solid 1px darken($color-success, 5);
                 }
             }
         }
@@ -86,7 +105,13 @@
             }
 
             &:hover {
-                background-color: $color-border;
+                background-color: $color-primary;
+				border-color: $color-primary;
+				color: #fff;
+
+				i {
+					color: #fff;
+				}
             }
         }
     }
