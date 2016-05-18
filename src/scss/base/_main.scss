@@ -9,6 +9,10 @@ body {
 
     color: #666;
     background-color: $color-light;
+
+    &.navbar-fixed-mode {
+        margin-top: 90px;
+    }
 }
 
 
