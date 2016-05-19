@@ -3,6 +3,10 @@
     border-radius: 0;
     background-color: $color-light-alt;
 
+    &.progress-dark {
+        background-color: $color-dark-light;
+    }
+
     &.progress-lg {
         height: 3rem;
 
@@ -12,18 +16,16 @@
     }
 
     &.progress-sm {
-        height: .5rem;
+        height: 1em;
 
         .progress-bar {
-            line-height: .5rem;
+            line-height: 1em;
         }
     }
 
     .progress-bar {
         background-color: $color-primary;
         border-radius: 0;
-
-
 
         &.progress-bar-success {
             background-color: $color-success;

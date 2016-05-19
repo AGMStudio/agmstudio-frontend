@@ -7,6 +7,7 @@
 
         color: $color-dark;
         border: solid 1px $color-border;
+        border-bottom: 0;
         background-color: #fff;
 
         .portfolio-item-title {
@@ -88,12 +89,11 @@
             margin: 0;
             padding: 0.4rem 0;
 
-            transition: all 0.5s;
+            transition: all 0.2s;
             text-align: center;
 
             color: $color-medium;
             border: solid 1px $color-border;
-            border-top: 0;
             background-color: lighten($color-border, 8);
 
             &:first-child {
@@ -117,8 +117,16 @@
     }
 
     .portfolio-item-img {
-        background-color: $color-dark;
+        background-color: #5b6468;
         //padding: 1.5rem;
+
+        .img-container {
+            width: 80%;
+            margin: 4rem auto 0 auto;
+            height: 450px;
+            overflow: hidden;
+            box-shadow: 0 0 8px rgba(0,0,0,.18);
+        }
 
         .carousel-portfolio-item {
             transition: all 0.5s;
@@ -127,6 +135,20 @@
                 transition: all 0.5s;
                 opacity: 0;
                 bottom: 0;
+            }
+
+            .carousel-control {
+                &.left {
+                    span {
+                        left: 30%;
+                    }
+                }
+
+                &.right {
+                    span {
+                        right: 30%;
+                    }
+                }
             }
 
             &:hover {

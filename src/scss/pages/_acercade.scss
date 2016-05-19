@@ -9,7 +9,7 @@
 }
 
 .title-autor {
-    margin-bottom: 7rem;
+    margin-bottom: 4rem;
     font-family: 'Lato';
     background-color: fade-out($color-primary, 0.8);
     padding: 4rem 0;
@@ -42,6 +42,12 @@
     margin: 0 auto;
     display: inline-block;
     text-align: center;
+
+    li {
+        a {
+            background-color: $color-dark-light;
+        }
+    }
 }
 
 /* Timeline 2 */
@@ -131,4 +137,19 @@
      display: block;
  }
 
+}
+
+
+.wrap-dark {
+    background-color: $color-dark;
+    padding: 4rem 0;
+    color: lighten($color-medium, 10);
+
+    .about-progress {
+        h5 {
+            color: lighten($color-medium, 10);
+            font-size: 1.5rem;
+            font-weight: 400;
+        }
+    }
 }
