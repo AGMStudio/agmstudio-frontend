@@ -83,6 +83,12 @@
 }
 
 @media (max-width: 767px) {
+    body {
+        &.navbar-fixed-mode {
+            margin-top: 40px;
+        }
+    }
+
     .agm-navbar {
         height: 50px;
         box-shadow: 0 0 1px 0 rgba(0,0,0,.2);
