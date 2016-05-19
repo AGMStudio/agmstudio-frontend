@@ -25,6 +25,7 @@
     "respond": "~1.4.2",
     "animate.css": "~3.5.1",
     "Yamm3": "yamm3#~1.1.0",
-    "holderjs": "~2.9.3"
+    "holderjs": "~2.9.3",
+    "prism": "^1.5.0"
   }
 }
