@@ -11,6 +11,14 @@
         }
     }
 
+    &.progress-sm {
+        height: .5rem;
+
+        .progress-bar {
+            line-height: .5rem;
+        }
+    }
+
     .progress-bar {
         background-color: $color-primary;
         border-radius: 0;
