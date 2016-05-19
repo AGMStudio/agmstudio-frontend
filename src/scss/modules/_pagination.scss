@@ -1,0 +1,42 @@
+.pagination {
+
+    li {
+        a {
+            margin-right: 1rem;
+            color: $color-dark;
+            border-color: $color-border;
+            background-color: #fff;
+            transition: all .2s;
+
+            &:hover {
+                background-color: $color-dark;
+                color: $color-light;
+                border-color: $color-dark;
+            }
+        }
+
+        &:first-child {
+            a {
+                border-radius: 0;
+            }
+        }
+
+        &:last-child {
+            a {
+                border-radius: 0;
+            }
+        }
+
+        &.active {
+            a {
+                background-color: $color-primary;
+                border-color: $color-primary;
+
+                &:hover {
+                    background-color: $color-primary;
+                    border-color: $color-primary;
+                }
+            }
+        }
+    }
+}
