@@ -23,13 +23,74 @@
                         <span class="post-date"><i class="fa fa-folder"></i> <a href="#">Programación</a></span>
                         <span class="post-tags"><i class="fa fa-tags"></i> <a href="#">Gulp</a>, <a href="#">Wordpress</a>, <a href="#">Sass</a></span>
                     </div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat commodi doloribus debitis, quia culpa a architecto aperiam modi, ex ducimus atque numquam consequatur provident maiores iusto ad iure, dolorem repellendus consequuntur eos voluptatem explicabo enim, dolores cupiditate! Dignissimos deleniti ipsa, unde perspiciatis modi rerum suscipit quisquam, blanditiis rem iusto aliquam.</p>
+                    <img src="<%= assets %>/img/e200.png" alt="" class="img-responsive pull-right img-border" />
+                    <p>Lorem ipsum dolor sit amet, <a href="#">consectetur adipisicing</a> elit. Fugiat commodi doloribus debitis, quia culpa a architecto aperiam modi, ex ducimus atque numquam consequatur provident maiores iusto ad iure, dolorem repellendus consequuntur eos <strong>voluptatem explicabo enim</strong>, dolores cupiditate! <em>Dignissimos deleniti</em> ipsa, unde perspiciatis modi rerum suscipit quisquam, blanditiis rem iusto aliquam.</p>
+                    <p>Lorem ipsum dolor sit amet, <a href="#">consectetur adipisicing</a> elit. Fugiat commodi doloribus debitis, quia culpa a architecto aperiam modi, ex ducimus atque numquam consequatur provident maiores iusto ad iure, dolorem repellendus consequuntur eos <strong>voluptatem explicabo enim</strong>, dolores cupiditate! <em>Dignissimos deleniti</em> ipsa, unde perspiciatis modi rerum suscipit quisquam, blanditiis rem iusto aliquam.</p>
+                    <figure class="center">
+                        <img src="<%= assets %>/img/1.jpg" alt="" class="img-responsive" />
+                        <figcaption>Fig1. - A view of the pulpit rock in Norway.</figcaption>
+                    </figure>
                     <p>Omnis aliquid, sed libero doloremque in cumque possimus dicta voluptate, distinctio officia. Veritatis dolore voluptatum autem esse, aspernatur omnis rerum, deleniti sint. Quidem est, accusamus repellat odio expedita eius harum quos eos ea hic dolore inventore optio minima totam maxime! Eius fugit numquam et, magni maxime. Saepe blanditiis id aliquam.</p>
+                    <h2>Lorem ipsum dolor sit amet</h2>
                     <p>Totam odio eveniet sunt, expedita quod illum rem eum beatae molestias magnam voluptatum consequuntur aperiam quo porro explicabo deserunt deleniti sequi, rerum aut, mollitia quaerat fuga sapiente aliquam. Quia deleniti beatae, fugit praesentium laudantium harum eum architecto accusamus ullam mollitia optio, quam placeat? At iste repellat temporibus aspernatur, ex est!</p>
+                    <img src="<%= assets %>/img/1.jpg" alt="" class="img-responsive center-block img-border" />
+                    <h3>consectetur ratione doloribus</h3>
                     <p>Velit, ad quam aliquam corporis, voluptatibus vitae consequatur aperiam quo hic. Eaque expedita esse aliquid ullam ut odit, eos repellendus at sequi illum excepturi, quidem distinctio quas necessitatibus quae! Magnam rem atque iusto libero optio. Impedit ipsum eveniet odit recusandae ad officia earum, corporis repellendus sit sequi, iure sint explicabo!</p>
+                    <ul>
+                        <li>Lorem ipsum dolor sit amet, consectetur.</li>
+                        <li>Cum excepturi officia nobis earum omnis.</li>
+                        <li>Sunt impedit cumque magni quaerat maiores!</li>
+                        <li>Consequuntur doloribus neque cupiditate sit, alias.</li>
+                        <li>Temporibus cupiditate maxime aliquam quam repellendus.</li>
+                    </ul>
                     <p>Perferendis nam quasi consectetur ratione doloribus aspernatur ab tenetur molestias harum eum consequatur dolor incidunt suscipit vero blanditiis omnis explicabo maiores accusamus vel, laudantium saepe expedita commodi totam magni? Aperiam voluptatum soluta incidunt aliquid assumenda obcaecati sapiente voluptates. Quasi est nisi quo optio, dolorem libero aut tenetur, repellat officia enim.</p>
+                    <ol>
+                        <li>Lorem ipsum dolor sit amet, consectetur.</li>
+                        <li>Cum excepturi officia nobis earum omnis.</li>
+                        <li>Sunt impedit cumque magni quaerat maiores!</li>
+                        <li>Consequuntur doloribus neque cupiditate sit, alias.</li>
+                        <li>Temporibus cupiditate maxime aliquam quam repellendus.</li>
+                    </ol>
                     <p>Laudantium ipsum quaerat non recusandae repellendus nihil explicabo dignissimos voluptas. Ipsum asperiores aperiam, velit ex sunt ducimus consectetur! Atque aut nihil molestias, architecto debitis laborum alias inventore suscipit animi. Accusantium, repellendus, minima. Sit odit quam nisi, hic. Tenetur doloremque, sit tempore, totam amet autem esse praesentium accusamus quisquam repudiandae quidem.</p>
+<pre class="console"><code>C:\Users\Adrian
+λ www
+
+C:\wamp\www
+λ cd prism-theme-one-dark\
+
+C:\wamp\www\prism-theme-one-dark (master) (prism-theme-one-dark@1.0.0)
+λ atom .
+
+C:\wamp\www\prism-theme-one-dark (master) (prism-theme-one-dark@1.0.0)
+λ</code></pre>
                     <p>Ad voluptatem laborum temporibus similique possimus natus aspernatur repellat, accusantium libero quasi! Iure, repellat, dolores. Pariatur quaerat perferendis soluta, excepturi ipsum! Deleniti ad praesentium quod, ut accusamus temporibus nam, minus delectus. Quisquam architecto animi quos voluptatum quam similique, voluptate explicabo, velit eligendi reiciendis cupiditate saepe, nesciunt aperiam blanditiis doloremque magni.</p>
+<pre class="line-numbers"><code class="language-javascript">$(document).ready(function(){
+    /* Change navbar with scroll */
+    var navbar_selector = $('.agm-navbar');
+    var body_selector = $('body');
+
+    $(window).scroll(function() {
+        if ($(document).scrollTop() > 120) {
+            navbar_selector.addClass('shrink animated fadeInDown');
+            navbar_selector.addClass('navbar-fixed-top');
+            navbar_selector.removeClass('navbar-static-top');
+            body_selector.addClass('navbar-fixed-mode');
+
+        } else {
+            navbar_selector.removeClass('shrink animated fadeInDown');
+            navbar_selector.addClass('navbar-static-top');
+            navbar_selector.removeClass('navbar-fixed-top');
+            body_selector.removeClass('navbar-fixed-mode');
+        }
+    });
+
+    var potfolio_more_link = $('.portfolio-item-more');
+    potfolio_more_link.on('click', function(e){
+        $(this).parent().parent().toggleClass('open');
+        e.preventDefault();
+    });
+});
+</code></pre>
                     <p>Consequatur recusandae consequuntur sed distinctio quasi facere architecto tempore officiis, molestiae officia. Minus voluptate ad perferendis aliquam nam ducimus quia nemo ea hic quam praesentium accusantium numquam culpa, laboriosam at delectus nisi, voluptates deserunt minima vitae, quos non magni blanditiis ullam. Rem doloremque magni est beatae praesentium asperiores aliquam itaque.</p>
                 </div>
             </div>

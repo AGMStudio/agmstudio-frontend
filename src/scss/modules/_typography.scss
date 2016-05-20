@@ -138,3 +138,57 @@ p {
 
     margin-bottom: 15px;
 }
+
+/* --------------------------------------------------------------------------*/
+/* Figures
+/* --------------------------------------------------------------------------*/
+
+
+figure {
+    display: inline-block;;
+    margin: 0 auto 15px auto;
+    text-align: center;
+    //width: 80%;
+
+    img {
+        margin: 0 auto;
+    }
+
+    figcaption {
+        background-color: $color-light-alt;
+        padding: 1rem;
+    }
+}
+
+.img-border {
+    padding: 0.5rem;
+    border: solid 1px $color-border;
+    background-color: $color-light;
+}
+
+.console {
+    border-radius: 0;
+    background-color: $color-light;
+    border: solid 1px $color-border;
+    position: relative;
+    padding-top: 5rem;
+    color: $color-medium;
+    text-shadow: 1px 1px 0px #fff;
+
+    &:before {
+        font-family: 'fontAwesome';
+        content: "\f120    Consola";
+        display: block;
+        text-shadow: none;
+        //height: 4rem;
+        padding: 1rem;
+        background-color: $color-border;
+        margin: 0;
+        position: absolute;
+        width: 100%;
+        left: 0;
+        top: 0;
+        // margin-bottom: 10px;
+
+    }
+}

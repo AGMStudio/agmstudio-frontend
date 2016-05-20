@@ -1,13 +1,14 @@
 @mixin btn-style($color-str) {
     color: #fff;
-    border-color: darken($color-str, 10%);
+    border-color: $color-str;
     //border: none;
     background-color: $color-str;
     transition: all ease 0.5s;
 
     &:hover {
-        background-color: darken($color-str, 5%);
-        border-color: darken($color-str, 15%);
+        //background-color: darken($color-str, 5%);
+        box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.6);
+        //border-color: darken($color-str, 15%);
     }
 }
 

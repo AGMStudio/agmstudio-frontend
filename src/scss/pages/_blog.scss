@@ -95,12 +95,13 @@
     margin-bottom: 4rem;
 
     .blog-widget-search {
-        min-height: 5rem;
+        min-height: 4rem;
 
         input {
-            min-height: 5rem;
+            min-height: 4rem;
             border-color: $color-border;
             box-shadow: none;
+            border-radius: 5px 0 0 5px !important;
 
             &:focus {
                 border-color: darken($color-border, 5%) !important;
@@ -108,16 +109,25 @@
         }
 
         .btn {
-            min-height: 5rem;
-            min-width: 5rem;
+            min-height: 4rem;
+            width: 4rem;
             border-radius: 0;
+            border: solid 1px $color-border;
+            box-shadow: none;
             background-color: $color-border;
             color: $color-medium;
             text-align: center;
+            transition: all 0.5;
+            border-radius: 0 5px 5px 0;
 
             i {
-                margin-left: 0.4rem;
+                //margin-left: 0.4rem;
                 font-size: 1.6rem;
+            }
+
+            &:hover {
+                background-color: darken($color-border, 5);
+                border-color: darken($color-border, 5);
             }
         }
     }
