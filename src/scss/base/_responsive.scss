@@ -162,7 +162,7 @@
 
         .navbar-header
         {
-            margin-left: 20px;
+            margin-left: 0px;
 
             .navbar-toggle {
                 right: 0;
@@ -178,7 +178,8 @@
                 .navbar-brand
                 {
                     font-size: 28px;
-                    margin-top: 10px;
+                    margin-top: 12px;
+                    margin-bottom: -12px;
                 }
 
                 #slogan
@@ -202,7 +203,37 @@
         }
     }
 
+    .panel {
+        margin-left: -15px;
+        margin-right: -15px;
+        border-left: 0 !important;
+        border-right: 0 !important;
+        border-radius: 0;
+    }
+
+    .panel-top {
+        margin-top: -41px;
+    }
+
+    .post {
+        padding: 2rem;
+
+
+        .post-title {
+            font-size: 2.7rem;
+        }
+
+        .post-single-info {
+            span {
+                margin-right: 2rem;
+            }
+        }
+    }
+
     .blog-post {
+        padding-left: 2rem;
+        padding-right: 2rem;
+
         .post-info {
         }
     }
