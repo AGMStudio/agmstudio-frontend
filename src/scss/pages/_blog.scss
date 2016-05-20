@@ -407,16 +407,16 @@
         line-height: 4rem;
     }
 
-    span {
-        margin-right: 2rem;
-
-        i {
-            margin-right: 0.5rem;
-        }
-    }
-
     .post-single-info {
         font-size: 1.2rem;
         margin-bottom: 2rem;
+
+        span {
+            margin-right: 2rem;
+
+            i {
+                margin-right: 0.5rem;
+            }
+        }
     }
 }
