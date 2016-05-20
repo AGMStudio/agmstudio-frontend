@@ -29,11 +29,16 @@ var config = {
         jsConcat : [
             'bower_components/jquery/dist/jquery.min.js',
             'bower_components/bootstrap/dist/js/bootstrap.min.js',
+            'bower_components/prism/prism.js',
+            'bower_components/prism/plugins/line-numbers/prism-line-numbers.min.js',
         ],
         css : [
             'bower_components/animate.css/animate.min.css',
             'bower_components/bootstrap/dist/css/bootstrap.min.css',
             'bower_components/font-awesome/css/font-awesome.min.css',
+            // 'bower_components/prism/themes/prism.css',
+            'bower_components/prism/plugins/line-numbers/prism-line-numbers.css',
+            'bower_components/prism-theme-one-dark/prism-onedark.css'
         ],
         fonts : [
             'bower_components/bootstrap/dist/fonts/*',
