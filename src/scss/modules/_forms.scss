@@ -1,12 +1,19 @@
 input {
     border-radius: 0 !important;
     box-shadow: none;
+
+    &:focus {
+        border-color: $color-primary !important;
+    }
 }
 
-input:focus, {
-    border-color: $color-primary !important;
-}
+textarea {
+    border-radius: 0 !important;
 
+    &:focus {
+        border-color: $color-primary !important;
+    }
+}
 
 
 .form-control {
