@@ -2,6 +2,10 @@
 /* Base
 /* --------------------------------------------------------------------------*/
 
+html {
+    background-color: darken($color-dark, 10);
+}
+
 body {
     color: #666;
     background-color: $color-light;

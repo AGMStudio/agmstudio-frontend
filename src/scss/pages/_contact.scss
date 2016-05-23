@@ -1,0 +1,58 @@
+.social-sidebar {
+    list-style-type: none;
+    padding: 0;
+
+    li {
+        font-size: 1.6rem;
+
+
+        a {
+            display: block;
+            color: $color-dark;
+            padding: 0.5rem 0;
+
+            &:hover {
+                color: $color-primary;
+            }
+
+
+            i {
+                margin-right: 1rem;
+            }
+
+
+        }
+
+        &:last-child a {
+            padding-bottom: 0;
+        }
+
+        &.rss > a > i {
+            color: $rss-color;
+        }
+
+        &.twitter > a > i {
+            color: $twitter-color;
+        }
+
+        &.facebook > a > i {
+            color: $facebook-color;
+        }
+
+        &.github > a > i {
+            color: $github-color;
+        }
+
+        &.linkedin > a > i {
+            color: $linkedin-color;
+        }
+
+        &.google-plus > a > i {
+            color: $googleplus-color;
+        }
+    }
+}
+
+.contact-form {
+    margin-bottom: 4rem;
+}

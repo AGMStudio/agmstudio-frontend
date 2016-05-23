@@ -4,6 +4,18 @@
     border: none;
     border-radius: 0;
 
+    &.panel-primary {
+        .panel-heading {
+            background-color: $color-primary;
+            border: none;
+        }
+
+        .panel-body  {
+            border: solid 1px $color-border;
+            border-top: 0;
+        }
+    }
+
     &.panel-white {
         background-color: #fff;
         border: solid 1px $color-border;
