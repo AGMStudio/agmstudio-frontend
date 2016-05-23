@@ -13,7 +13,7 @@
             <a href="#" class="btn btn-social btn-social-sm btn-square solid twitter"><i class="fa fa-twitter"></i></a>
             <a href="#" class="btn btn-social btn-social-sm btn-square solid google-plus"><i class="fa fa-google-plus"></i></a>
             <a href="#" class="btn btn-social btn-social-sm btn-square solid facebook"><i class="fa fa-facebook"></i></a>
-            <a href="#" class="btn btn-social btn-social-sm btn-square solid dribbble"><i class="fa fa-dribbble"></i></a>
+            <!-- <a href="#" class="btn btn-social btn-social-sm btn-square solid dribbble"><i class="fa fa-dribbble"></i></a> -->
             <a href="#" class="btn btn-social btn-social-sm btn-square solid linkedin"><i class="fa fa-linkedin"></i></a>
         </div>
     </div>
@@ -48,14 +48,13 @@
                 <h2 class="color-primary no-mt mb-4">Aptitudes Profesionales</h2>
                 <!-- Nav tabs -->
                 <ul class="nav nav-pills nav-pills-aptitudes" role="tablist">
-                    <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Desarrollo Web</a></li>
-                    <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Videojuegos</a></li>
-                    <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Herramientas</a></li>
+                    <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Conocimientos</a></li>
+                    <li role="presentation"><a href="#profile" id="profile-btn" aria-controls="profile" role="tab" data-toggle="tab">Números</a></li>
                 </ul>
             </div>
             <!-- Tab panes -->
             <div class="tab-content about-progress">
-                <div role="tabpanel" class="tab-pane active" id="home">
+                <div role="tabpanel" class="tab-pane fade in active" id="home">
                     <div class="row">
                         <div class="col-md-6">
                             <h5>HTML5 &amp; CSS3</h5>
@@ -112,8 +111,34 @@
                         <div class="col-md-6"></div>
                     </div>
                 </div>
-                <div role="tabpanel" class="tab-pane" id="profile">2</div>
-                <div role="tabpanel" class="tab-pane" id="messages">3</div>
+                <div role="tabpanel" class="tab-pane fade" id="profile">
+                    <div class="row">
+                        <div class="col-md-3 col-sm-6">
+                            <div class="feature-counter">
+                                <span class="feature-counter-number numscroller" data-slno='1' data-min='0' data-max='7' data-delay='1' data-increment="1">7</span>
+                                <h5 class="feature-counter-title">Plantillas creadas</h5>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="feature-counter">
+                                <span class="feature-counter-number numscroller" data-slno='1' data-min='0' data-max='6047' data-delay='1' data-increment="10">6047</span>
+                                <h5 class="feature-counter-title">Plantillas vendidas</h5>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="feature-counter">
+                                <span class="feature-counter-number numscroller" data-slno='1' data-min='0' data-max='1' data-delay='2' data-increment="1">1</span>
+                                <h5 class="feature-counter-title">Libro publicado</h5>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="feature-counter">
+                                <span class="feature-counter-number numscroller" data-slno='1' data-min='0' data-max='268' data-delay='5' data-increment="3">268</span>
+                                <h5 class="feature-counter-title">Ejemplares vendidos</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section> <!-- row -->
     </div> <!-- container -->
@@ -121,7 +146,7 @@
 <div class="container">
     <section class="row">
         <div class="col-md-12">
-            <h3 class="timeline-title">Trayectoria Profesional</h3>
+            <h3 class="timeline-title right-line">Trayectoria Profesional</h3>
             <ul class="timeline-2">
                 <li class="animated fadeInRight">
                     <time class="timeline-time" datetime="">14/1/2012 <span>Enero</span></time>

@@ -46,6 +46,7 @@
     li {
         a {
             background-color: $color-dark-light;
+            transition: all ease 0.2s;
         }
     }
 }
@@ -144,6 +145,7 @@
     background-color: $color-dark;
     padding: 4rem 0;
     color: lighten($color-medium, 10);
+    min-height: 469px;
 
     .about-progress {
         h5 {
@@ -151,5 +153,25 @@
             font-size: 1.5rem;
             font-weight: 400;
         }
+    }
+}
+
+.feature-counter {
+    margin-top: 2rem;
+    background-color: darken($color-dark, 8);
+    border: solid 1px lighten($color-dark, 5);
+    text-align: center;
+    padding: 3rem;
+    font-weight: 300;
+
+    .feature-counter-number {
+        font-size: 7rem;
+        line-height: 7rem;
+    }
+
+    .feature-counter-title {
+        color: $color-primary !important;
+        margin-top: 3rem;
+        text-transform: uppercase;
     }
 }

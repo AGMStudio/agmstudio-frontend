@@ -30,13 +30,17 @@
             }
         }
     }
+
+    .feature-counter {
+        padding: 2rem;
+    }
 }
 
 @media (max-width: 991px) {
     .footer-love {
         margin-top: 4rem;
     }
-    
+
     .ag-hero {
         .ag-hero-img {
             position: static;
@@ -91,6 +95,11 @@
         &.navbar-fixed-mode {
             margin-top: 40px;
         }
+    }
+
+    .feature-counter {
+        max-width: 400px;
+        margin: 2rem auto;
     }
 
     .agm-navbar {
