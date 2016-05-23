@@ -19,9 +19,9 @@
         }
 
         .book-info {
-            padding: 3rem;
+            padding: 3rem 5rem 3rem 3rem ;
 
-            *:first-child {
+            & > *:first-child {
                 margin-top: 0;
                 padding-top: 0;
             }
@@ -31,6 +31,32 @@
                 margin-bottom: 2rem;
                 border-bottom: solid 1px $color-border;
             }
+
+            .book-buttons {
+                margin-top: 40px;
+
+                a {
+                    vertical-align: top;
+                }
+            }
+        }
+    }
+}
+
+.feature-list {
+    list-style-type: none;
+    padding: 0;
+
+    li {
+        font-size: 1.6rem;
+        margin-bottom: 1.4rem;
+
+        &:before {
+            font-family: 'fontAwesome';
+            font-size: 2rem;
+            content: "\f105";
+            color: $color-primary;
+            margin-right: 1.4rem;
         }
     }
 }

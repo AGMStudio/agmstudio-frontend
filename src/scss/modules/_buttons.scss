@@ -41,6 +41,7 @@
 
 .btn.btn-default {
     @include btn-style(darken($color-light, 6%));
+    color: $color-medium;
 }
 
 .btn.btn-primary {

@@ -1,0 +1,17 @@
+.modal {
+    .modal-dialog {
+        .modal-content {
+            border-radius: 0;
+
+            .modal-header {
+                background-color: $color-light-alt;
+                border-bottom: solid 1px $color-border;
+            }
+
+            .modal-footer {
+                background-color: $color-light-alt;
+                border-top: solid 1px $color-border;
+            }
+        }
+    }
+}

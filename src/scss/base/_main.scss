@@ -115,6 +115,12 @@ input:-webkit-autofill {
 
         font-weight: 700;
     }
+
+    &.site-name-light {
+        strong {
+            color: $color-light;
+        }
+    }
 }
 
 .wrap-light-alt {
