@@ -12,81 +12,86 @@
 </header>
 
 <div class="container">
-    <div class="panel panel-white book-entry panel-top">
+    <div class="panel panel-white panel-top wow fadeIn book-entry">
         <div class="panel-body">
             <div class="row">
-                <div class="col-sm-4 book-cover">
-                    <img src="<%= assets %>/img/book.png" alt="" class="img-responsive animated flipInY">
-                </div>
-                <div class="col-sm-8 book-info">
-                    <h2 class="book-title">Desarrollo Web Frontend Profesional</h2>
-                    <p class="lead-sm color-danger">Este libro ha sido creado con la experiencia de haber realizado varias plantillas de extensa complejidad para el sitio web <a href="#">wrapbootstrap</a> donde el autor ha vendido más de 6000 plantillas.</p>
-                    <h3 class="color-primary">Características</h3>
-                    <ul class="feature-list">
-                        <li class="">Aprende a utilizar las mejores herramientas para desarrollo web.</li>
-                        <li class="">Conoce los método para estructurar mejor tu proyecto.</li>
-                        <li class="">Agiliza tu trabajando automatizando tareas con <strong class="color-danger">Gulp</strong>.</li>
-                        <li class="">Aprende a usar <strong class="color-success">NodeJS</strong>, <strong class="color-warning">Bower</strong> y  <strong class="color-royal">Gulp</strong> para el desarrollo frontend.</li>
-                    </ul>
-                    <div class="book-buttons">
-                        <button href="#" class="btn btn-md btn-info"  data-toggle="modal" data-target="#myModal"><i class="fa fa-book"></i> Ver índice</button>
-                        <!-- Modal -->
-                        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-                            <div class="modal-dialog" role="document">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                                        <h4 class="modal-title" id="myModalLabel">Índice de contenidos</h4>
-                                    </div>
-                                    <div class="modal-body">
-                                        <ol>
-                                            <li>Introducción</li>
-                                            <li>Herramientas y Configuración
-                                                <ol>
-                                                    <li>Un terminal decente para tí</li>
-                                                    <li>Software básico</li>
-                                                </ol>
-                                            </li>
-                                            <li>
-                                                Crear un entorno de trabajo
-                                                <ol>
-                                                    <li>Repositorio Git</li>
-                                                    <li>Configurando un proyecto Node.js</li>
-                                                    <li>Instalando Bower</li>
-                                                    <li>Estructura del Proyecto</li>
-                                                </ol>
-                                            </li>
-                                            <li>
-                                                Gulp
-                                                <ol>
-                                                    <li>Conceptos básicos</li>
-                                                    <li>Trabajando con Plugins</li>
-                                                    <li>Ante todo limpieza</li>
-                                                    <li>Orden de ejecución</li>
-                                                    <li>Creando una configuración</li>
-                                                    <li>Procesando HTML</li>
-                                                    <li>Integrando librerías de terceros</li>
-                                                    <li>Vigilando cambios y servidor de pruebas</li>
-                                                    <li>Procesando Javascript</li>
-                                                    <li>Procesando SCSS</li>
-                                                    <li>Procesando imágenes y fuentes</li>
-                                                    <li>Resultado Final</li>
-                                                </ol>
-                                            </li>
-                                        </ol>
-                                    </div>
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-info" data-dismiss="modal">Close</button>
+                <div class="col-md-4">
+                    <div class="book-cover">
+                        <img src="<%= assets %>/img/book.png" alt="" class="img-responsive wow flipInY animation-delay-5">
+                    </div>
+                </div> <!-- col-md-4 -->
+                <div class="col-md-8">
+                    <div class="book-info">
+                        <h2 class="book-title wow fadeInDown animation-delay-3">Desarrollo Web Frontend Profesional</h2>
+                        <p class="lead-sm wow fadeInDown animation-delay-5">Este libro ha sido creado con la experiencia de haber realizado varias plantillas de extensa complejidad para el sitio web <a href="#">wrapbootstrap</a> donde el autor ha vendido más de 6000 plantillas.</p>
+                        <p class="color-danger wow fadeInDown animation-delay-5">Publicado en Enero de 2016 | 80 Páginas</p>
+                        <h3 class="color-primary wow fadeInDown animation-delay-7">Características</h3>
+                        <ul class="feature-list">
+                            <li class="wow fadeInDown animation-delay-6">Aprende a utilizar las mejores herramientas para desarrollo web.</li>
+                            <li class="wow fadeInDown animation-delay-7">Conoce los método para estructurar mejor tu proyecto.</li>
+                            <li class="wow fadeInDown animation-delay-8">Agiliza tu trabajando automatizando tareas con <strong class="color-danger">Gulp</strong>.</li>
+                            <li class="wow fadeInDown animation-delay-9">Aprende a usar <strong class="color-success">NodeJS</strong>, <strong class="color-warning">Bower</strong> y  <strong class="color-royal">Gulp</strong> para el desarrollo frontend.</li>
+                        </ul>
+                        <div class="book-buttons wow fadeInUp animation-delay-11">
+                            <button href="#" class="btn btn-md btn-info"  data-toggle="modal" data-target="#myModal"><i class="fa fa-book"></i> Ver índice</button>
+                            <!-- Modal -->
+                            <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                            <h4 class="modal-title" id="myModalLabel">Índice de contenidos</h4>
+                                        </div>
+                                        <div class="modal-body">
+                                            <ol>
+                                                <li>Introducción</li>
+                                                <li>Herramientas y Configuración
+                                                    <ol>
+                                                        <li>Un terminal decente para tí</li>
+                                                        <li>Software básico</li>
+                                                    </ol>
+                                                </li>
+                                                <li>
+                                                    Crear un entorno de trabajo
+                                                    <ol>
+                                                        <li>Repositorio Git</li>
+                                                        <li>Configurando un proyecto Node.js</li>
+                                                        <li>Instalando Bower</li>
+                                                        <li>Estructura del Proyecto</li>
+                                                    </ol>
+                                                </li>
+                                                <li>
+                                                    Gulp
+                                                    <ol>
+                                                        <li>Conceptos básicos</li>
+                                                        <li>Trabajando con Plugins</li>
+                                                        <li>Ante todo limpieza</li>
+                                                        <li>Orden de ejecución</li>
+                                                        <li>Creando una configuración</li>
+                                                        <li>Procesando HTML</li>
+                                                        <li>Integrando librerías de terceros</li>
+                                                        <li>Vigilando cambios y servidor de pruebas</li>
+                                                        <li>Procesando Javascript</li>
+                                                        <li>Procesando SCSS</li>
+                                                        <li>Procesando imágenes y fuentes</li>
+                                                        <li>Resultado Final</li>
+                                                    </ol>
+                                                </li>
+                                            </ol>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-info" data-dismiss="modal">Close</button>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
+                            <a href="https://sellfy.com/p/UB4y/" id="UB4y" class="sellfy-buy-button">Buy now</a>
                         </div>
-                        <a href="https://sellfy.com/p/UB4y/" id="UB4y" class="sellfy-buy-button">Buy now</a>
                     </div>
-                </div>
-            </div>
-        </div>
-    </div>
+                </div> <!-- col-md-8 -->
+            </div> <!-- row -->
+        </div> <!-- panel-body -->
+    </div> <!-- panel panel-white panel-top wow fadeIn -->
 </div> <!-- container -->
 
 <!-- build:include layout/footer.html --><!-- /build -->

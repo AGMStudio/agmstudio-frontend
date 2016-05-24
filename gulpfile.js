@@ -31,6 +31,7 @@ var config = {
             'bower_components/bootstrap/dist/js/bootstrap.min.js',
             'bower_components/prism/prism.js',
             'bower_components/prism/plugins/line-numbers/prism-line-numbers.min.js',
+            'bower_components/wow/dist/wow.min.js'
         ],
         css : [
             'bower_components/animate.css/animate.min.css',

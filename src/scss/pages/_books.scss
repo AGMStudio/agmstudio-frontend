@@ -1,47 +1,53 @@
 .book-entry {
+
     .panel-body {
         padding: 0;
 
         .book-cover {
-            padding: 2rem;
             background-color: $color-warning;
-            overflow: hidden;
-            transition: 2s;
-
-            &:hover {
-                background-color: $color-info;
-            }
+            padding: 2rem;
 
             img {
-                box-shadow: 1px 0 8px #000;
+                box-shadow: 0 0 5px rgba(0, 0, 0, 0.7);
                 margin: 0 auto;
             }
         }
 
         .book-info {
-            padding: 3rem 5rem 3rem 3rem ;
+            padding: 3rem 2rem;
 
             & > *:first-child {
                 margin-top: 0;
-                padding-top: 0;
-            }
-
-            .book-title {
-                padding-bottom: 1rem;
-                margin-bottom: 2rem;
-                border-bottom: solid 1px $color-border;
             }
 
             .book-buttons {
-                margin-top: 40px;
+                margin-top: 4rem;
 
-                a {
+                .btn {
                     vertical-align: top;
                 }
             }
         }
     }
 }
+
+ @media (min-width: 992px) {
+    .book-cover {
+        min-height: 510px;
+
+        img {
+            margin-top: 7rem !important;
+        }
+    }
+ }
+
+ @media (min-width: 1200px) {
+    .book-cover {
+        img {
+            margin-top: 2.2rem !important;
+        }
+    }
+ }
 
 .feature-list {
     list-style-type: none;

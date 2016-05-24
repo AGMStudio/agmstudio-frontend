@@ -25,6 +25,8 @@ $(document).ready(function(){
     });
 });
 
+new WOW().init();
+
 /**
 -* jQuery scroroller Plugin 1.0
 -*
