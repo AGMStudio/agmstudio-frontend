@@ -78,3 +78,19 @@
         }
     }
 }
+
+.call-action-buttons {
+    a {
+        margin: 1rem;
+    }
+}
+
+.wrap-primary {
+    background-color: $color-dark;
+    color: $color-light;
+    padding: 4rem 0;
+
+    p:last-child {
+        margin-bottom: 0;
+    }
+}
