@@ -128,3 +128,151 @@
         }
     }
 }
+
+.home-post {
+    display: table;
+    background-color: #fff;
+    border: solid 1px $color-border;
+    margin-bottom: 3rem;
+
+    &-img {
+        display: table-cell;
+        width: 200px;
+    }
+
+    &-content {
+        display: table-cell;
+        vertical-align: top;
+        padding: 1.5rem;
+
+        p {
+            margin: 0;
+            font-size: 1.3rem;
+        }
+
+        &-title {
+            margin: 0;
+            margin-bottom: 1rem;
+
+            a {
+                display: block;
+                font-size: 2rem;
+                line-height: 2.6rem;
+                transition: all ease 0.5s;
+                color: $color-primary;
+
+                &:hover {
+                    color: $color-dark;
+                }
+            }
+        }
+
+        &-info {
+            font-size: 1.2rem;
+            text-transform: uppercase;
+            margin-top: .8rem;
+
+            &-date {
+                margin-right: 1rem;
+            }
+
+            &-readmore {
+            }
+
+            &-category {
+                margin-right: 1rem;
+
+                a {
+
+                    color: #fff;
+                    padding: 0.3rem 1rem;
+                    border-radius: 5px;
+                }
+
+                &.programacion {
+                    a {
+                        background-color: $color-info;
+                    }
+                }
+
+                &.diseno {
+                    a {
+                        background-color: $color-royal;
+                    }
+                }
+
+                &.recursos {
+                    a {
+                        background-color: $color-warning;
+                    }
+                }
+
+                &.general {
+                    a {
+                        background-color: $color-success;
+                    }
+                }
+            }
+
+        }
+    }
+}
+
+@media (max-width: 1199px) {
+    .home-post {
+        &-img {
+        }
+
+        &-content {
+            p {
+                line-height: 2rem;
+            }
+
+            &-info {
+                display: none;
+            }
+        }
+    }
+}
+
+@media (max-width: 991px) {
+    .home-post {
+        &-img {
+        }
+
+        &-content {
+            p {
+                line-height: 2.4rem;
+            }
+
+            &-info {
+                display: block;
+            }
+        }
+    }
+}
+
+@media (max-width: 559px) {
+    .home-post {
+        &-img {
+            display: block;
+            margin: 0 auto;
+
+            img {
+                display: inline-block;
+                margin: 2rem auto;
+                text-align: center;
+                border: solid 1px $color-border;
+                padding: 5px;
+            }
+            //width: 100px;
+        }
+
+        &-content {
+            display: block;
+            &-info {
+                //display: none;
+            }
+        }
+    }
+}
