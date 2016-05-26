@@ -229,3 +229,24 @@ input:-webkit-autofill {
 .content-box.box-royal:hover {
     background-color: darken($color-royal, 5%);
 }
+
+/* Preload images */
+body:after {
+  content: url(../img/close.png) url(../img/loading.gif) url(../img/prev.png) url(../img/next.png);
+}
+
+.lb-cancel {
+  background: url(../img/loading.gif) no-repeat;
+}
+
+.lb-nav a.lb-prev {
+  background: url(../img/prev.png) left 48% no-repeat;
+}
+
+.lb-nav a.lb-next {;
+  background: url(../img/next.png) right 48% no-repeat;
+}
+
+.lb-data .lb-close {
+  background: url(../img/close.png) top right no-repeat;
+}
