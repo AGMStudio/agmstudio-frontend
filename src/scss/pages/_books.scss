@@ -25,6 +25,7 @@
 
                 .btn {
                     vertical-align: top;
+                    margin-bottom: 1rem;
                 }
             }
         }
@@ -45,6 +46,16 @@
     .book-cover {
         img {
             margin-top: 2.2rem !important;
+        }
+    }
+ }
+
+ @media (max-width: 787px) {
+    .book-buttons {
+        text-align: center;
+
+        .modal {
+            text-align: left;
         }
     }
  }
