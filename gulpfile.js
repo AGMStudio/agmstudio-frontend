@@ -24,7 +24,7 @@ var config = {
         js : [
             'bower_components/html5shiv/dist/html5shiv.min.js',
             'bower_components/respond/dest/respond.min.js',
-            'bower_components/holderjs/holder.min.js'
+            //'bower_components/holderjs/holder.min.js'
         ],
         jsConcat : [
             'bower_components/jquery/dist/jquery.min.js',
