@@ -55,6 +55,17 @@
                     border-color: darken($grunt-color, 10);
                     color: #fff;
                 }
+
+                &.tag-bower {
+                    background-color: $bower-color;
+                    border-color: darken($bower-color, 10);
+                    color: #fff;
+                }
+                &.tag-bootstrap {
+                    background-color: $bootstrap-color;
+                    border-color: darken($bootstrap-color, 10);
+                    color: #fff;
+                }
             }
         }
 
@@ -118,44 +129,31 @@
 
     .portfolio-item-img {
         background-color: #5b6468;
+        overflow: hidden;
+        transition: all ease 0.5s;
+
+
+        img {
+            transition: all ease 0.8s;
+            margin: 0 auto;
+        }
+
+
+        &:hover {
+            background-color: darken(#5b6468, 5%);
+            box-shadow: 0 -1px 2px rgba(0, 0, 0, 0.3);
+            img {
+                transform: scale(1.13);
+            }
+        }
         //padding: 1.5rem;
 
-        .img-container {
-            width: 80%;
-            margin: 4rem auto 0 auto;
-            height: 450px;
-            overflow: hidden;
-            box-shadow: 0 0 8px rgba(0,0,0,.18);
-        }
 
-        .carousel-portfolio-item {
-            transition: all 0.5s;
+    }
+}
 
-            .carousel-indicators {
-                transition: all 0.5s;
-                opacity: 0;
-                bottom: 0;
-            }
-
-            .carousel-control {
-                &.left {
-                    span {
-                        left: 30%;
-                    }
-                }
-
-                &.right {
-                    span {
-                        right: 30%;
-                    }
-                }
-            }
-
-            &:hover {
-                .carousel-indicators {
-                    opacity: 1;
-                }
-            }
-        }
+@media (min-width: 992px) and (max-width: 1199px) {
+    .portfolio-item-tag {
+        margin: 0 !important;
     }
 }
