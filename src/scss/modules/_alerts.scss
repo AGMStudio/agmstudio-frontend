@@ -1,0 +1,41 @@
+.alert {
+    border-radius: 0;
+    color: $color-dark;
+    background-color: $color-light;
+    border: solid 1px $color-border;
+
+    &.alert-success {
+        border: solid 1px $color-success;
+        border-left: solid 5px $color-success;
+        border-right: solid 5px $color-success;
+        color: darken($color-success, 10%);
+    }
+
+    &.alert-info {
+        border: solid 1px $color-info;
+        border-left: solid 5px $color-info;
+        border-right: solid 5px $color-info;
+        color: darken($color-info, 10%);
+    }
+
+    &.alert-warning {
+        border: solid 1px $color-warning;
+        border-left: solid 5px $color-warning;
+        border-right: solid 5px $color-warning;
+        color: darken($color-warning, 10%);
+    }
+
+    &.alert-danger {
+        border: solid 1px $color-danger;
+        border-left: solid 5px $color-danger;
+        border-right: solid 5px $color-danger;
+        color: darken($color-danger, 10%);
+    }
+
+    &.alert-royal {
+        border: solid 1px $color-royal;
+        border-left: solid 5px $color-royal;
+        border-right: solid 5px $color-royal;
+        color: darken($color-royal, 10%);
+    }
+}
