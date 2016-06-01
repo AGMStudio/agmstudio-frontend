@@ -256,6 +256,10 @@
 
         }
     }
+
+    .breadcrumb {
+        display: none !important;
+    }
 }
 
 
@@ -280,9 +284,5 @@
 
     .header-page {
         padding: 18px 0 18px 0;
-    }
-
-    .breadcrumb {
-        display: none !important;
     }
 }
